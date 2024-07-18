@@ -1,0 +1,206 @@
+<HTML>
+<HEAD>
+   <TITLE>Stephen G. Kobourov: Teaching</TITLE>
+</HEAD>
+<Body background="white_stone.jpg">
+<p>
+<center>
+<h1> Teaching</h1>
+</center>
+<p>
+
+
+
+<hr>
+<p>
+<ul>
+
+<li> <b>Spring 2008</b>: In spring 2008 I will be teaching <a href="http://www.cs.arizona.edu/classes/cs445">CS445, Introduction to Algorithms</a>. 
+ The emphasis of this course is on learning techniques for designing and analyzing algorithms and data structures. Topics discussed include: Divide-and-conquer, Dynamic Programming, Sorting and Searching, Graph algorithms, Geometric algorithms, Approximation algorithms, Complexity classes.
+
+<p>
+<li> <b> Fall 2007</b>: In fall 2007 I am teaching CS645, Graph Theoretic Concepts in Computer Science. The course reviews classical computer science techniques that are based on graph theoretical concepts. The focus will be on in-depth study of recent topics such as the small world phenomenon, network analysis, P2P and sensor networks. 
+</ul>
+
+<hr>
+<p>
+<ul>
+<li> I was on sabbatical leave in 2006-07, visiting the Department of Computer Science at the <a href="http://www.ub.bw/">University of Botswana</a> as a Fulbright Scholar. I taught a couple of classes there: an undergraduate course on algorithms and a graduate course on research methods. More information can be found in my <a href="http://kalaharilog.blogspot.com/2006_08_01_archive.html">KalahariLog</a>.
+
+
+<p>
+</ul>
+
+
+<hr>
+<p>
+<ul>
+<li> <b>Spring 2006</b>: In spring 2006 I taught <a
+href="http://www.cs.arizona.edu/classes/cs573/">CS573, Theory of
+Computation</a>.  The course begins by reviewing properties of major
+language classes in the Chomsky Hierarchy. Universal computation
+models besides Turing machines, such as general recursive functions,
+are examined to amplify the significance of Church's
+thesis. Unsolvable problems and reducibility are studied. The bulk of
+the course focuses complexity theory, the interrelationships among
+complexity classes, and the study of both NP complete and provably
+intractable problems. Topics covered include Church's thesis,
+undecidability, complexity theory and intractable problems.
+
+
+<p>
+<li> <b>Fall 2005</b>: In fall 2005 I taught <a href="http://www.cs.arizona.edu/classes/cs545/fall05/">CS545, Design and Analysis of Algorithms</a>. 
+The emphasis of this course is on techniques for designing algorithms for various computer applications. In the process of learning and practicing methods of algorithm design, we will see many examples of important algorithms. We will also discuss techniques for implementing algorithms and improving program performance.
+<p>
+
+
+</ul>
+
+
+<hr>
+<p>
+<ul>
+<li> <b>Spring 2005</b>: In spring 2005 I taught <a href="http://www.cs.arizona.edu/classes/cs345">CS345, Analysis of Discrete Structures</a>.
+ Topics include trees, graphs, program verification, algorithm analysis, recurrence relations, algorithm classes (greedy, divide and conquer), hashing, combinatorics and elementary probability.
+<p>
+<li> <b>Fall 2004</b>: In fall 2004 I taught <a href="http://www.cs.arizona.edu/classes/cs545/">CS545, Design and Analysis of Algorithms</a>. 
+The emphasis of this course is on techniques for designing algorithms for various computer applications. In the process of learning and practicing methods of algorithm design, we will see many examples of important algorithms. We will also discuss techniques for implementing algorithms and improving program performance.
+<p>
+
+
+</ul>
+
+<hr>
+<p>
+<ul>
+<li> <b>Spring 2004</b>: In spring 2004 I taught <a href="http://www.cs.arizona.edu/classes/cs445">CS445, Introduction to Algorithms</a>. 
+ The emphasis of this course is on learning techniques for designing algorithms and data structures for various computer applications. We focus on the design and analysis of algorithms. In the process of learning and practicing methods of algorithm design, we will see many examples of important algorithms. Topics discussed include: Paradigms of algorithm design, Sorting and Searching, String matching, Graph algorithms, Geometric algorithms, Approximation algorithms.
+
+<p>
+
+<li> <b>Fall 2003</b>: I taught <a href="http://www.cs.arizona.edu/classes/cs645/fall03/">CS645, Advanced Topics in Algorithms</a>. The focus of this class was on Human Computer Interaction and Information Visualization.  This class will focus on the concepts underlying human-computer interaction, and information visualization through deisgn and implementation of algorithms for HCI and InfoVis. Topics include: human capabilities (e.g., visual and auditory perception, memory, mental models, and interface metaphors); interface technology (e.g., input and output devices, interaction styles, and common interface paradigms); interface design methods and evaluation (e.g., user-centered design, prototyping, and design principles and rules, experiments); visualization techniques (visualization to enhance comprehension and analysis of structured information such as text collections, networked systems like the Web, work processes, etc.) 
+
+<p>
+
+
+</ul>
+
+<hr>
+<p>
+<ul>
+<li> <b>Spring 2003</b>: In spring 2003 I taught <a href="http://www.cs.arizona.edu/classes/cs445/">CS445, Introduction to Algorithms</a>. 
+ The emphasis of this course is on learning techniques for designing algorithms and data structures for various computer applications. We focus on the design and analysis of algorithms. In the process of learning and practicing methods of algorithm design, we will see many examples of important algorithms. Topics discussed include: Paradigms of algorithm design, Sorting and Searching, String matching, Graph algorithms, Geometric algorithms, Approximation algorithms.
+<p>
+
+<li> <b>Fall 2002</b>: I taught <a href="http://www.cs.arizona.edu/classes/cs473/">CS473, Automata, Grammars, and Languages</a>.
+This course is an introduction to the fundamental models of
+computation used throughout computer science: finite automata,
+pushdown automata, and Turing machines. The hierarchical relationships
+among these models, their relative power and limitations, and their
+variants are studied. Student skills are developed in understanding
+and using rigorous definition and proof to attack precisely formulated
+questions about computability and computation. Topics covered include:
+finite automata and regular expressions, turing machines, properties
+of regular sets, Church's thesis, context-free grammars and pushdown
+automata, recursive and recursively , enumerable sets, properties of
+context-free languages, universal machines, undecidable problems, and
+reducibility.
+
+<p>
+
+
+</ul>
+
+<hr>
+<p>
+<ul>
+<li> <b>Spring 2002</b>: In spring 2002 I taught <a href="http://www.cs.arizona.edu/classes/cs573/">CS573, Theory of Computation</a>. 
+The course begins by reviewing properties of major
+language classes in the Chomsky Hierarchy. Universal computation
+models besides Turing machines, such as general recursive functions,
+are examined to amplify the significance of Church's
+thesis. Unsolvable problems and reducibility are studied. The bulk of
+the course focuses complexity theory, the interrelationships among
+complexity classes, and the study of both NP complete and provably
+intractable problems. Topics covered include Church's thesis,
+undecidability, complexity theory and intractable problems.
+
+<p>
+
+<li> <b>Fall 2001</b>: I taught <a href="http://www.cs.arizona.edu/classes/cs473">CS473, Automata, Grammars, and Languages</a>. 
+This course is an introduction to the fundamental models of
+computation used throughout computer science: finite automata,
+pushdown automata, and Turing machines. The hierarchical relationships
+among these models, their relative power and limitations, and their
+variants are studied. Student skills are developed in understanding
+and using rigorous definition and proof to attack precisely formulated
+questions about computability and computation. Topics covered include:
+finite automata and regular expressions, turing machines, properties
+of regular sets, Church's thesis, context-free grammars and pushdown
+automata, recursive and recursively , enumerable sets, properties of
+context-free languages, universal machines, undecidable problems, and
+reducibility.
+<p>
+
+
+</ul>
+
+<hr>
+<p>
+<ul>
+
+<li> <b>Spring 2001</b>: In spring 2001 I taught <a href="http://www.cs.arizona.edu/classes/cs645">CS645, Advanced Topics in Algorithms</a>. The focus of this class was on Information Visualization and Graph Drawing. Some of the topics include:
+<ul>
+<li> Drawing trees, graphs, and digraphs
+<li> Divide and conquer techniques, multi-scale methods, and incremental constructions
+<li> Planar graphs and planarization
+<li> Orthogonal drawings, upward planarity, and nonplanar orientations
+<li> Force-directed methods and n-body techniques
+<li> Map labeling and automatic label placement
+</ul>
+<p>
+<li> <b>Fall 2000</b>: I fall 2000 I taught <a href="http://www.cs.arizona.edu/classes/cs473">CS473, Automata, Grammars, and Languages</a>. 
+This course is an introduction to the fundamental models of
+computation used throughout computer science: finite automata,
+pushdown automata, and Turing machines. The hierarchical relationships
+among these models, their relative power and limitations, and their
+variants are studied. Student skills are developed in understanding
+and using rigorous definition and proof to attack precisely formulated
+questions about computability and computation. Topics covered include:
+finite automata and regular expressions, turing machines, properties
+of regular sets, Church's thesis, context-free grammars and pushdown
+automata, recursive and recursively , enumerable sets, properties of
+context-free languages, universal machines, undecidable problems, and
+reducibility.
+
+</ul>
+<hr>
+<p>
+Other useful links:
+<ul>
+<li> <a href="http://www.cs.arizona.edu/academicPrograms/courses/"> Courses and Information Webpage</a>
+<li> <a href="http://catalog.arizona.edu/acadcals.html">Academic
+Calendar</a> 
+<li> <a
+href="http://www.registrar.arizona.edu/schedules/finals.htm">Finals
+Schedule</a>
+</ul>
+</ul><P>
+<hr>
+<p>
+<DIV ALIGN=CENTER>
+[ 
+<A HREF="http://www.cs.arizona.edu/people/kobourov">Home</A> | 
+<A HREF="http://www.cs.arizona.edu/people/kobourov/PROJECTS">Projects</A> |
+<A HREF="http://www.cs.arizona.edu/people/kobourov/papers.html">Papers</A> |
+<A HREF="http://www.cs.arizona.edu/people/kobourov/teaching.html">Teaching</A> |
+<A HREF="http://www.cs.arizona.edu/people/kobourov/cv.pdf">CV</A> |
+<A HREF="http://www.cs.arizona.edu/people/kobourov/colleagues.html">Colleagues</A> |
+<A HREF="http://www.arizona.edu">U of A</A> | 
+<A HREF="http://www.cs.arizona.edu">U of A CS</A>
+]
+</DIV>
+<P>
+
+</BODY>
+</HTML>

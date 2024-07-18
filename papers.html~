@@ -1,0 +1,334 @@
+<HTML>
+<HEAD>
+   <TITLE>Stephen G. Kobourov: Selected Refereed Publications </TITLE>
+</HEAD>
+<Body background="white_stone.jpg">
+<p>
+
+
+<p>
+<center>
+<h2> Books and Monographs</h2>
+</center>
+<p>
+
+1. M. T. Goodrich and S. G. Kobourov, editors, <em> 10th International Symposium on Graph Drawing (GD)</em>, Lecture Notes in Computer Science, Vol. 2528, Springer-Verlag, 2002.
+
+<hr>
+<p>
+
+
+<p>
+<center>
+<h2> Refereed Journal Publications </h2>
+</center>
+<p>
+<hr>
+<p>
+
+
+
+2. C. A. Duncan, M. T. Goodrich, and S. G. Kobourov, "Balanced Aspect Ratio Trees and Their Use for
+Drawing Large Graphs," Journal of Graph Algorithms and Applications, v. 4, p. 19-46, 2000. (Invited
+to this special issue on best papers from GD'98. A <a href="dgk-bartt-98.ps">preliminary version</a>
+appeared in the <em> 6th Symposium on Graph Drawing (GD)</em>,
+p.111-124, 1998.) <br>
+
+<p>
+3. C. C. Cheng, C. A. Duncan, M. T. Goodrich, and S. G. Kobourov, "Drawing Planar Graphs with Circular Arcs," Discrete &amp; Computational Geometry, v. 25, p. 405-418, 2001. (A <a href="cdgk-dpgca-99.ps">preliminary version</a>
+appeared in the <em> 7th Symposium on Graph Drawing (GD)</em>, 
+p.117-126, 1999.)<br>
+<p>
+4. C. A. Duncan, M. T. Goodrich, and S. G. Kobourov, "Balanced Aspect Ratio Trees: Combining the 
+Advantages of k -d Trees and Octrees," Journal of Algorithms, v. 38, p. 303-333, 2001. (Invited to this special issue on best papers from SODA'99. A <a href="dgk-bartc-98.ps">preliminary version</a>
+appeared in the <em> 10th ACM-SIAM Symposium on
+Discrete Algorithms, (SODA)</em>, p.300-309, 1999.) <br>
+<p>
+5. C. A. Duncan, M. T. Goodrich, and S. G. Kobourov, "Planarity-Preserving Clustering and Embedding 
+for Large Planar Graphs," Computational Geometry: Theory and Applications, v. 24, no. 3, p. 95-114, 2002. (Invited to this special issue on the best papers from GD'99. A <a href="dgk-ppcel-99.ps">preliminary version</a> appeared in the <em> 7th Symposium on Graph
+Drawing (GD)</em>, p.186-196, 1999.) <br>
+<p>
+6. P. Gajer and S. G. Kobourov, "GRIP: Graph Drawing with Intelligent Placement," Journal of Graph 
+Algorithms and Applications, v. 6, no. 3, p. 203-224, 2002. (Invited to this special issue on the best
+papers from GD'2000. A <a href="grip_demo.pdf"> preliminary version</a> appeared in the <em> 8th Symposium on Graph Drawing (GD)</em>, p. 222-228, 2000.) <br>
+<p>
+7. C. A. Duncan and S. G. Kobourov, "Polar Coordinate Drawing of Planar Graphs with Good Angular 
+Resolution," Journal of Graph Algorithms and Applications, v. 7, no. 4, p. 311-333, 2003. (Invited to 
+this special issue on the best papers from GD'2001. A <a href="polar.ps">preliminary version</a> appeared in the <em> 9th Symposium on Graph
+Drawing (GD)</em>, p.407-421, 2001.)<br>
+
+
+<p>
+8. P. Gajer, M. T. Goodrich, and S. G. Kobourov, "A Multi-Dimensional Approach to Force-Directed Layouts of Large Graphs," Computational Geometry: Theory and Applications, v. 29 no. 1, p.3-18, 2004.(Invited to this special issue on the best papers from CGC'2001. A <a href="grip_paper.pdf">preliminary version</a> appeared in the <em> 8th Symposium on Graph
+Drawing (GD)</em>, p.211-221, 2000.) <br>
+<p>
+
+9. T. Biedl, E. Demaine, C. A. Duncan, R. Fleischer, and S. G. Kobourov, "Tight Bounds on Maximal 
+and Maximum Matching," Journal of Discrete Mathematics, v. 285 no. 1, p. 7-15, 2004. (A <a href="art.ps">preliminary version</a> appeared in the <em> 12th International Symposium on Algorithms and Computation (ISAAC)</em>, p.308-319, 2001.)<br>
+
+
+<p>
+10. C. Collberg and S. G. Kobourov, "Self-Plagiarism in Computer Science," Communications of the 
+ACM, v. 48, no. 2, p. 88-94, 2005. (A <a href="http://splat.cs.arizona.edu/sp.pdf">preliminary version</a>.)<br>
+
+<p>
+11. C. Erten and S. G. Kobourov, "Simultaneous Embedding of a Planar Graph and Its Dual on the
+Grid," Theory of Computing, v. 38, no. 3, p.313-327, 2005. (A <a href="dual_drawing.pdf">preliminary version</a> appeared in the <em> 13th International Symposium on Algorithms and Computation (ISAAC)</em>, p.575-587, 2002.)<br>
+
+
+<p>
+12. C. Erten, S. G. Kobourov, V. Le, and A. Navabi, ``Simultaneous Graph
+Drawing: Layout Algorithms and Visualization Schemes,'' Journal of Graph
+Algorithms and Applications, v. 9, no. 1, p. 165-182, 2005. (A <a href="simg.pdf">preliminary version</a> appeared in the <em>11th Symposium on Graph Drawing (GD)</em>, p. 437-449, 2003.)<br>
+
+<p>
+13. S. G. Kobourov and K. Wampler, ``Non-Euclidean Spring Embedders,'' IEEE Transactions on Visualization and Computer Graphics, v. 11, no. 6, p. 757-767, 2005. (A <a href="riemann_embedders.pdf">preliminary version</a> appeared in the <em> 10th IEEE Symposium on Information Visualization (INFOVIS)</em>, p. 207--214, 2004.)<br>
+
+
+<p>
+14. C. Erten and S. G. Kobourov, ``Simultaneous Embedding of Planar Graphs with Few Bends,''  Journal of Graph
+Algorithms and Applications, v. 9, no. 3, p. 347-364, 2005.  (A <a href="simemb-gd04.pdf">preliminary version</a> appeared in the <em> 12th Symposium on Graph Drawing (GD)</em>, p. 195-206, 2004.)<br>
+
+
+<p>
+15. A. Efrat, S. G. Kobourov, and A. Lubiw, ``Computing Homotopic Shortest
+Paths Efficiently,'' Computational Geometry: Theory and Applications. Accepted, to appear in 2006.
+(A <a href="homotopic.ps">preliminary version</a> appeared in the  <em>10th 
+European Symp. on Algorithms (ESA)</em>, p.411-423, 2002.)<br>
+
+<p>
+16. P. Brass, E. Cenek, C. A. Duncan, A. Efrat, C. Erten, D. Ismailescu,
+S. G. Kobourov, A. Lubiw, and J. S. B. Mitchell, ``On Simultaneous
+Planar Graph Embeddings,'' Computational Geometry: Theory and Applications. Accepted, to appear in 2006.
+(A <a href="wads03.pdf">preliminary version</a> appeared in the <em>Workshop on Algorithms and Data 
+Structures (WADS)</em>, p. 243-255, 2003.)<br>
+
+<p>
+17. A. Efrat, C. Erten, and S. G. Kobourov, "Fixed-Location Circular-Arc Drawing of Planar Graphs", Journal of Graph Algorithms and Applications. Accepted, to appear in 2006. (A <a href="2cd3cd.ps">preliminary version</a> appeared in the <em>11th Symposium on Graph Drawing (GD)</em>, p. 147-158, 2003.)<br>
+
+
+<p>
+18. C. A. Duncan, A. Efrat, S. G. Kobourov, and C. Wenk, "Drawing Graphs with Fat Edges," International Journal of Foundations of Computer Science. Accepted, to appear in 2006. (A <a href="fatedges.pdf"> preliminary version</a> appeared in the <em> 9th Symp. on Graph Drawing (GD)</em>, p. 162-177, 2001.) <br>
+
+<p>
+19. C. A. Duncan, S. G. Kobourov, and V. S. A. Kumar, ``Optimal
+Constrained Graph Exploration,'' ACM Transactions on Algorithms. Accepted, to appear in 2006. (A <a href="dkk-ocge-00.ps">preliminary version</a> appeared in the 12th ACM-SIAM Annual Symposium on Discrete Algorithms (SODA), p. 807-814, 2001.) <br>
+
+
+
+<p>
+<hr>
+<p>
+<center>
+<h2> Refereed Conference Publications </h2>
+</center>
+<p>
+<hr>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20. B. Awerbuch and S. G. Kobourov, <A HREF="robot.ps">"Polylogarithmic-Overhead Piecemeal Graph Exploration,"</a> Proceedings of the 11th Conference on Computational Learning Theory (COLT), p. 280-286, July 1998. <br>
+<p>
+21. C. A. Duncan, M. T. Goodrich, and S. G. Kobourov, <a href="dgk-bartt-98.ps">"Balanced Aspect Ratio Trees and Their
+Use for Drawing Large Graphs,"</a> 6th Annual Symposium on Graph Drawing (GD), p. 111-124, 1998.
+(Prelim. version of 1.) <br>
+<p>
+22. C. A. Duncan, M. T. Goodrich, and S. G. Kobourov, <a href="dgk-ppcel-99.ps">"Planarity-Preserving Clustering and Embedding
+
+for Large Planar Graphs,"</a> 7th Symp. on Graph Drawing (GD), p. 186-196, 1999. (Prelim. version
+of 4.) <br>
+<p>
+23. C. C. Cheng, C. A. Duncan, M. T. Goodrich, and S. G. Kobourov, <a href="cdgk-dpgca-99.ps">"Drawing Planar Graphs with
+Circular Arcs,"</a> 7th Annual Symposium on Graph Drawing (GD), p. 117-126, 1999. (Prelim. version
+of 2.) <br>
+<p>
+24. C. A. Duncan, M. T. Goodrich, and S. G. Kobourov, <a href="dgk-bartc-98.ps">"Balanced Aspect Ratio Trees: Combining the
+Advantages of k -d Trees and Octrees,"</a> 10th ACM-SIAM Annual Symposium on Discrete Algorithms,
+(SODA), p. 300-309, 1999. (Prelim. version of 3.) <br>
+
+<p>
+25. S. Bridgeman, M. T. Goodrich, S. G. Kobourov, and R. Tamassia, <a href="bgkt-pilot.ps">"PILOT: An Interactive Tool for
+Learning and Grading,"</a> 31st Annual Technical Symposium on Computer Science Education (SIGCSE),
+p. 139-143, March 2000. <br>
+<p>
+26. S. Bridgeman, M. T. Goodrich, S. G. Kobourov, and R. Tamassia, <a href="bgkt-sail.ps">"SAIL: A System for Generating,
+Archiving, and Retrieving Specialized Assignments Using LATEX,"</a> 31st Annual Technical Symposium
+on Computer Science Education (SIGCSE), p. 300-304, March 2000. <br>
+<p>
+27. P. Gajer, M. T. Goodrich, and S. G. Kobourov, <a href="grip_paper.pdf">"A Fast Multi-Dimensional Algorithm for Drawing 
+
+Large Graphs,"</a> 8th Symp. on Graph Drawing (GD), p. 211-221, 2000. (Prelim. version of 8.) <br>
+<p>
+28. P. Gajer and S. G. Kobourov, <a href="grip_demo.pdf">"GRIP: Graph Drawing with Intelligent Placement,"</a> 8th Symp. on 
+Graph Drawing (GD), p. 222-228, 2000. (Prelim. version of 5.) <br>
+<p>
+29. C. A. Duncan, S. G. Kobourov, and V. S. A. Kumar, <a href="dkk-ocge-00.ps">"Optimal Constrained Graph Exploration,"</a> 
+12th ACM-SIAM Annual Symp. on Discrete Algorithms (SODA), p. 807-814, 2001. <br>
+<p>
+30. C. A. Duncan and S. G. Kobourov, <a href="polar.ps">"Polar Coordinate Drawing of Planar Graphs with Good Angular
+Resolution,"</a> 9th Symp. on Graph Drawing (GD), p. 407-421, 2001. (Prelim. version of 6.) <br>
+
+<p>
+31. T. Biedl, E. Demaine, C. A. Duncan, R. Fleischer, and S. G. Kobourov, <a href="art.ps">"Tight Bounds on Maximal 
+and Maximum Matching,"</a> 12th Intl. Symp. on Algorithms &amp; Computation (ISAAC), p. 308-319, 2001. 
+(Prelim. version of 9.) <br>
+<p>
+32. C. A. Duncan, A. Efrat, S. G. Kobourov, and C. Wenk, <a href="fatedges.pdf">"Drawing Graphs with Fat Edges,"</a> 9th
+Symp. on Graph Drawing (GD), p. 162-177, 2001. <br>
+<p>
+33. A. Efrat, S. G. Kobourov, M. Stepp, and C. Wenk, <a href="video.ps">"Growing Fat Graphs,"</a> 18th Annual Symposium 
+on Computational Geometry (SCG), p. 277-278, 2002. <br>
+<p>
+34. C. Collberg, S. G. Kobourov, J. Miller, and S. Westbrook, "AlgoVista: A Tool to Enhance Algorithm
+Design and Understanding," 7th Ann. Symp. on Innovation and Technology in Comp. Sci. Education
+(ITiCSE), p. 228-228, 2002. <br>
+<p>
+35. A. Efrat, S. G. Kobourov, and A. Lubiw, <a href="homotopic.ps">"Computing Homotopic Shortest Paths Efficiently,"</a> 10th 
+European Symp. on Algorithms (ESA), p.411-423, 2002. (Prelim. version of 11.)<br>
+<p>
+36. C. Erten and S. G. Kobourov, <a href="dual_drawing.pdf">"Simultaneous Embedding of a Planar Graph and Its Dual on the
+Grid,"</a> 13th Intl. Symp. on Algorithms &amp; Computation (ISAAC), p. 575-587, 2002. (Prelim. version
+of 10.) <br>
+<p>
+37. C. Collberg, S. G. Kobourov, J. Nagra, J. Pitts, and K. Wampler, <a href="tgrip.pdf">"A System for Graph-Based 
+Visualization of the Evolution of Software,"</a> ACM Symp. on Software Visualization (SoftVis), p. 77-86, 2003. <br>
+<p>
+
+38. P. Brass, E. Cenek, C. A. Duncan, A. Efrat, C. Erten, D. Ismailescu, S. G. Kobourov, A. Lubiw, and
+J. S. B. Mitchell, <a href="wads03.pdf">"On Simultaneous Planar Graph Embeddings,"</a> Workshop on Algorithms and Data 
+Structures (WADS), p. 243-255, 2003. (Prelim. version of 13.)<br>
+<p>
+39. C. Collberg, S. G. Kobourov, S. Kobes, B. Smith, S. Trush, and G. Yee, <a href="tetris.pdf">"TetraTetris: An Application of Multi-User Touch-Based Interaction using DiamondTouch"</a>, 9th International Conference on 
+Human-Computer Interaction (INTERACT), p. 81-88, 2003. <br>
+<p>
+40. A. Efrat, H. H. Gonzales-Banos, S. G. Kobourov, and L. Palaniappan, <a href="target.pdf">"Optimal Motion Strategies to 
+Track and Capture a Predictable Target,"</a> IEEE Conference of Robotics and Automation (ICRA), p. 411-423, 2003. <br>
+<p>
+41. C. Collberg, S. G. Kobourov, E. Carter, and C. Thomborson, <a href="ecg.pdf">"Error-Correcting Graphs for Software 
+Watermarking"</a>, 29th Workshop on Graph Theoretic Concepts in Computer Science (WG), p. 156-167,
+2003. <br>
+<p>
+42. C. Collberg, S. G. Kobourov, J. Louie, and T. Slattery, <a href="icwi_plag.pdf">"SPLAT: A System for Self-Plagiarism 
+Detection"</a>, IADIS Conference on WWW/Internet, p. 508-514, 2003. <br>
+<p>
+43. A. Efrat, C. Erten, and S. G. Kobourov, <a href="2cd3cd.ps">"Fixed-Location Circular-Arc Drawing of Planar Graphs",</a>
+11th Symposium on Graph Drawing (GD), p. 147-158, 2003. <br>
+<p>
+44. C. Erten, S. G. Kobourov, and C. Pitta, <a href="gmorph.pdf">"Intersection-Free Morphing of Planar Graphs"</a>, 11th Symposium on Graph Drawing (GD), p. 320-331, 2003. <br>
+<p>
+45. F. Brandenburg, D. Eppstein, M. T. Goodrich, S. G. Kobourov, G. Liotta, P. Mutzel, <a href="gd-open.pdf">"Selected Open Problems 
+in Graph Drawing,"</a> 11th Symposium on Graph Drawing (GD), p. 515-539, 2003. <br>
+
+<p>
+46. C. Erten, S. G. Kobourov, V. Le, and A. Navabi, <a href="simg.pdf">"Simultaneous Graph Drawing: Layout Algorithms
+and Visualization Schemes"</a>, 11th Symposium on Graph Drawing (GD), p. 437-449, 2003. <br>
+<p>
+47. C. Erten, P. J. Harding, S. G. Kobourov, K. Wampler, and G. Yee, <a href="graphael.pdf">"GraphAEL: Graph Animations
+with Evolving Layouts",</a> 11th Symposium on Graph Drawing (GD), p. 98-110, 2003. <br>
+<p>
+48. C. Collberg, S. G. Kobourov, and S. Westbrook, <a href="sigcse.pdf">"AlgoVista: An Algorithmic Search Tool in an Educational Setting,"</a> 35st Technical Symposium on Computer Science Education (SIGCSE), p. 462-466, 2004. <br>
+
+<p>
+49. C. Erten, P. Harding, S. G. Kobourov, K. Wampler, and G. Yee, <a href="vda_final.pdf">"Exploring the Computing Literature
+Using Temporal Graph Visualization,"</a> Conference on Visualization and Data Analysis (VDA), p. 45-56, 2004. <br>
+<p>
+50. C. Duncan, D. Eppstein, and S. G. Kobourov, <a href="thickness.pdf">"The Geometric Thickness of Low Degree Graphs,"</a>
+20th Annual ACM-SIAM Symposium on Computational Geometry (SCG), p. 340-346, 2004. <br>
+<p>
+51. C. Erten, S. G. Kobourov, and C. Pitta, <a href="http://gmorph.cs.arizona.edu/final.avi">"Morphing Planar Graphs,"</a> 20th Annual ACM-SIAM Symposium on
+Computational Geometry (SCG), p.451-452, 2004. <br>
+<p>
+52. S. G. Kobourov and K. Wampler <a href="riemann_embedders.pdf">"Non-Euclidean Spring Embedders,"</a> 10th Annual IEEE Symposium on Information Visualization (InfoVis), p. 207--214, 2004. <br>
+<p>
+53. J. Abello, S. G. Kobourov, and R. Yusufov, <a href="cfv-gd04.pdf">``Visualizing Large Graphs with Compound-Fisheye Views and Treemaps,''</a> 12th
+Symposium on Graph Drawing (GD),  p. 431-442, 2004.
+<p>
+54. S. G. Kobourov and C. Pitta, <a href="dt-gd04.pdf">``An Interactive Multi-User System for Simultaneous Graph Drawing,''</a> 12th
+Symposium on Graph Drawing (GD),  p. 492-503, 2004.
+<p>
+55. C. Erten and S. G. Kobourov, <a href="simemb-gd04.pdf">``Simultaneous Embedding of Planar Graphs with Few Bends,''</a> 12th
+Symposium on Graph Drawing (GD),  p. 195-206, 2004.
+<p>
+56. D. Forrester, S. G. Kobourov, A. Navabi, K. Wampler, G. Yee, <a href="graphael-gd04">``graphael: A System for Generalized Force-Directed Layouts,''</a> 12th
+Symposium on Graph Drawing (GD),  p. 454-466, 2004.
+
+<p>
+57. B. Dux, A. Iyer, S. Debray, D. Forrester, and S. G. Kobourov, <a href="iwpc2005.pdf">``Visualizing the Behavior of Dynamically Modifiable Code.''</a> 13th IEEE International Workshop on Program Comprehension (IWPC), p. 337-340, 2005. 
+
+<p>
+58. C. Collberg, S. Debray, S. G. Kobourov, and S. Westbrook, <a href="wcce2005.pdf">``Increasing Undergraduate Involvement in Computer Science Research,''</a> 8th World Conference on Computers in Education (WCCE), p. 342-352, 2005.
+
+<p>
+59. J. Cappos, S. G. Kobourov, M. Miles, M. Stepp, K. Pavlou, and A. Wixted, <a href="interact05.pdf">"Collaboration with DiamondTouch,"</a> 10th International Conference on Human-Computer Interaction (INTERACT), p. 986-990, 2005.
+
+<p>
+
+60. C. Erten, A. Efrat, D. Forrester, A. Iyer, and S. G. Kobourov, <a href="alenex06.pdf">``Force-Directed Approaches to Sensor Localization,''</a> 8th Workshop on Algorithm Engineering and Experiments (ALENEX), p. 108-118, 2006.
+
+<p>
+
+61. S. G. Kobourov and M. Landis, <a href="morphing_gd06.pdf">"Morphing Planar Graphs in Spherical Space,"</a> 14th Symposium on Graph Drawing (GD), p. 306-317, 2006.
+
+<p>
+
+62. A. Estrella-Balderrama, J. Fowler, and S. G. Kobourov, <a href="ulp_gd06.pdf">"Characterization of Unlabeled Level Planar Trees,"</a> 14th Symposium on Graph Drawing (GD), p. 367-379, 2006.
+
+<p>
+
+63. J. Cappos, A. Estrella-Balderrama, J. Fowler, and S. G. Kobourov, <a href="simemb_gd06.pdf">"Simultaneous Graph Embedding  with Bends and Circular Arcs,"</a> 14th Symposium on Graph Drawing (GD), p. 95-107, 2006.
+
+<P>
+
+64. U. Brandes, C. Erten, J. Fowler, F. Frati, M. Geyer, C. Gutwenger, S. Hong, M. Kaufmann, S. G. Kobourov, G. Liotta, P. Mutzel, A. Symvonis, <a href="PAPERS/cocoon135a.pdf">"Colored Simultaneous Geometric Embeddings,"</a> 13th International Computing and Combinatorics Conference, (COCOON), p. 254-263, 2007.
+
+<p>
+
+65. J. Fowler and S. G. Kobourov, <a href="PAPERS/ULP_GD07.pdf">``Characterization of Unlabeled Level Planar Graphs,''</a> 15th Symposium on Graph Drawing (GD). Accepted, to appear in 2007.
+
+<p>
+
+66. J. Fowler and S. G. Kobourov, <a href="PAPERS/MLNP_GD07_long.pdf">``Minimum Level Nonplanar Patterns for Trees,''</a> 15th Symposium on Graph Drawing (GD). Accepted, to appear in 2007.
+
+<p>
+
+67. F. Frati, M. Kaufmann and S. G. Kobourov, <a href="PAPERS/near_simemb.pdf">``Constrained Simultaneous and Near-Simultaneous Embeddings,''</a> 15th Symposium on Graph Drawing (GD). Accepted, to appear in 2007.
+
+
+<hr>
+<p>
+<DIV ALIGN=CENTER>
+[ 
+<A HREF="http://www.cs.arizona.edu/people/kobourov">Home</A> | 
+<A HREF="http://www.cs.arizona.edu/people/kobourov/PROJECTS">Projects</A> |
+<A HREF="http://www.cs.arizona.edu/people/kobourov/papers.html">Papers</A> |
+<A HREF="http://www.cs.arizona.edu/people/kobourov/teaching.html">Teaching</A> |
+<A HREF="http://www.cs.arizona.edu/people/kobourov/cv.pdf">CV</A> |
+<A HREF="http://www.cs.arizona.edu/people/kobourov/colleagues.html">Colleagues</A> |
+<A HREF="http://www.arizona.edu">U of A</A> | 
+<A HREF="http://www.cs.arizona.edu">U of A CS</A>
+]
+</DIV>
+<P>
+
+</BODY>
+</HTML>

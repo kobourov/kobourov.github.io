@@ -1,0 +1,1100 @@
+% This text is proprietary.
+% It's a part of presentation made by myself.
+% It may not used commercial.
+% The noncommercial use such as private and study is free
+% May 2007
+% Author: Sascha Frank 
+% University Freiburg 
+% www.informatik.uni-freiburg.de/~frank/
+%
+% 
+\documentclass{beamer}
+%\usepackage{beamerthemeshadow}
+\usetheme{Frankfurt}
+\usepackage{pgf}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{eulervm}
+
+
+\begin{document}
+\title{Putting Data on the Map}  
+\author{Stephen Kobourov\\University of Arizona}
+%\\{\scriptsize\em Joint work with Yifan Hu, Emden Gansner, Chris %Volinsky at AT\&T Research}}
+\date{} 
+\setbeamertemplate{navigation symbols}{} 
+%\setbeamertemplate{footline}[text line]{A Sample Talk}
+ \setbeamertemplate{footline}[text line]{ text }
+
+\begin{frame}[plain]
+\titlepage\pause
+\begin{center}
+\vspace{-2cm}
+\includegraphics[width=6.5cm]{MapExamples/CatMap}
+\end{center}
+\end{frame}
+
+
+%\begin{frame}
+%\frametitle{Table of contents}\tableofcontents
+%\end{frame} 
+
+
+
+\begin{frame}[plain]
+\frametitle{Motivation} 
+\begin{columns}
+\begin{column}{5.3cm}
+\begin{itemize}
+\item<1-> Given high-dimensional data
+\item<2-> Visualize it ``nicely''
+\item<3-> What is ``nicely''?
+\end{itemize} 
+\end{column}
+\begin{column}{5.8cm}
+\begin{overlayarea}{\textwidth}{6cm} 
+\includegraphics<1>[width=5.8cm]{MapExamples/morse_data}
+\includegraphics<2>[width=4.5cm]{MapExamples/morse1}
+\includegraphics<3>[width=5.0cm]{MapExamples/morse2}
+\end{overlayarea}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{Motivation cont.}
+\begin{columns}
+\begin{column}{5cm}
+\begin{itemize}
+\item Relational data 
+\begin{itemize}
+\item represented by graphs
+\item objects $\rightarrow$ vertices
+\item relationships $\rightarrow$ edges
+\end{itemize}
+
+\item Metric data 
+\begin{itemize}
+\item distance b/n points
+\item points $\rightarrow$ vertices
+\item distances $\rightarrow$ weighted edges
+\end{itemize}
+\item Graph drawing
+\begin{itemize}
+\item can produce great visualization
+\item not so good at clusters, neighborhoods
+\end{itemize} 
+\end{itemize}
+\end{column}
+\begin{column}{5cm}
+\includegraphics[width=4.5cm]{MapExamples/polygons}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{Motivation cont.}
+\begin{columns}
+\begin{column}{5.5cm}
+\begin{itemize}
+\item InfoVis rationale
+\begin{itemize}
+\item <1->humans are good at image processing
+\item <2->images can have powerful impact
+\item <3->a little help can go a long way
+\end{itemize}
+\end{itemize}
+\end{column}
+\begin{column}{5.5cm}
+\begin{overlayarea}{\textwidth}{5cm} 
+\vspace{-1.5cm}\includegraphics<1->[width=5cm]{MapExamples/captcha2}
+\hspace{.2cm}
+
+\includegraphics<2->[width=4cm]{MapExamples/kennedy}
+%\includegraphics<2->[width=3.2cm]{MapExamples/RossPerot2}
+\hspace{.2cm}
+
+\includegraphics<3->[width=4cm]{MapExamples/TubeMap3}
+\end{overlayarea}
+
+\end{column}\end{columns}
+\end{frame}
+
+
+
+\begin{frame}[plain]\frametitle{Motivation cont.}
+\begin{columns}
+\begin{column}{5cm}
+\begin{itemize}
+\item<1-> {\em ``A picture is worth a thousand words''}
+\begin{itemize}
+\item<2-> how about a graph?
+\item<3-> a histogram?
+\item<4-> a chart?
+\item<5-> a plot?
+\end{itemize}
+\end{itemize}
+\end{column}
+\begin{column}{5cm}
+\begin{overlayarea}{\textwidth}{6cm} 
+\vspace{-.5cm}\includegraphics<2-3>[width=4cm]{MapExamples/wikipedia}
+
+\includegraphics<3-3>[width=4cm]{MapExamples/historyflow}
+
+\includegraphics<4-5>[width=4.5cm]{MapExamples/piechart}
+
+%{<4-5>\em\tiny \copyright graphjam}
+
+\includegraphics<5-5>[width=5cm]{MapExamples/xkcd_decline}
+
+%{<5-5>\em\tiny \copyright xkcd}
+\end{overlayarea}
+
+\end{column}\end{columns}
+\end{frame}
+
+\begin{frame}[plain]\frametitle{Winning the War}
+\includegraphics[width=10cm]{MapExamples/afghanistan_graph}
+\end{frame}
+
+\begin{frame}[plain]\frametitle{All Vis, All the Time?}
+\includegraphics[width=10cm]{MapExamples/InfoVis}\pause
+\hspace{-6cm}\includegraphics[width=3.5cm]{MapExamples/HomerBrain}
+\end{frame}
+
+\begin{frame}[plain]\frametitle{Something Different}
+\includegraphics[width=10cm]{MapExamples/different}
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{Less is More}
+\includegraphics[width=10cm]{MapExamples/info_confusion}
+\end{frame}
+
+
+\begin{frame}[plain]
+\frametitle{Why Maps?}
+\begin{columns}
+\begin{column}{5cm}
+\begin{overlayarea}{\textwidth}{5cm} 
+\begin{itemize}
+%To paraphrase the soon-to-be junior senator from Minesotta
+\item<1-> Good enough
+\item<2-> Smart enough
+\item<3-> And doggone it, people like them\\
+\vspace{1cm}\includegraphics<3->[width=4cm]{MapExamples/dumfuckistan}
+\end{itemize}
+\end{overlayarea}
+%\vspace{2cm} 
+\end{column}
+\begin{column}{5cm}
+\begin{overlayarea}{\textwidth}{5cm} 
+\vspace{-1cm}
+\includegraphics<1->[width=4.5cm]{MapExamples/electoral}
+\newline
+\includegraphics<2->[width=4.5cm]{MapExamples/jesusland}
+\end{overlayarea}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}[plain]
+\frametitle{Really, Why Maps?}
+\begin{columns}
+\begin{column}{4.5cm}
+\begin{overlayarea}{\textwidth}{4.5cm} 
+\begin{itemize}
+%To paraphrase the soon-to-be junior senator from Minesotta
+\item<1-> Dimensionality reduction: ${\cal R}^n\rightarrow {\cal R}^2$
+\item<2-> Natural extention from graphs 
+\item<3-> Explicit clustering: regions and colors
+\item<4-> Intuitive and familiar 
+%\vspace{1cm}\includegraphics<3->[width=4cm]{MapExamples/dumfuckistan}
+\end{itemize}
+\end{overlayarea}
+%\vspace{2cm} 
+\end{column}
+\begin{column}{6cm}
+\begin{overlayarea}{\textwidth}{6cm} 
+\vspace{-1cm}
+\includegraphics<1->[width=5cm]{MapExamples/gd_graph}
+
+\includegraphics<2->[width=5cm]{MapExamples/gd_map}
+\end{overlayarea}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{Maps, Maps, and More Maps}
+\begin{itemize}
+\item<1-> Western maps date to 500BC Soleto map
+\item<1-> Chinese maps are said to be older
+\item<1-> Mercator's map is from 1569
+\end{itemize} 
+\begin{center}\includegraphics<1>[height=5cm]{MapExamples/Mercator_1569}
+\includegraphics<2>[height=5cm]{MapExamples/NatGeo}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{Maps, Maps, and More Maps}
+\begin{overlayarea}{\textwidth}{6cm} 
+\begin{columns}
+\begin{column}{5.4cm}
+\begin{itemize}
+\vspace{-.9cm}\item<1-> Redrawing geographic maps subject to constraints
+\item<2-> Cartograms: 2004 US election results
+\end{itemize} 
+\end{column}
+\begin{column}{4.5cm}
+\includegraphics<1->[height=2.5cm]{MapExamples/NYTimes2004}
+\end{column}
+\end{columns}
+\begin{center}\includegraphics<2->[height=3.5cm]{MapExamples/NYTimesUSMap}
+\includegraphics<2->[height=3.5cm]{MapExamples/NewmanCartogram}
+\end{center}
+\end{overlayarea}
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{Maps, Maps, and More Maps}
+\begin{itemize}
+\item New Yorker '76 vs. Economist '09
+\end{itemize} 
+\begin{center}\includegraphics[width=5cm]{MapExamples/NewYorkMap}\hspace{.2cm}
+\includegraphics[width=5.1cm]{MapExamples/ChinaMap}
+\end{center}
+\end{frame}
+
+\begin{frame}[plain]\frametitle{Maps, Maps, and More Maps}
+\begin{itemize}
+\item Whimsical maps: Europe in 1870
+% Franco-Prussian war
+% Prussia looks like Walrus-mustache Chancellor  Otto Von Bismark
+% France is a soldier about to poke Prussia with a sword
+% England is an old lady struggling with her Irish dog
+\end{itemize} 
+\begin{center}\includegraphics[width=9cm]{MapExamples/Europe_map_1870}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{Maps, Maps, and More Maps}
+\begin{itemize}
+\item Whimsical maps: Kalman and Meyerowitz's New Yorkistan
+\end{itemize} 
+\begin{center}\includegraphics[width=6.5cm]{MapExamples/NewYorkistan}
+\end{center}
+\end{frame}
+
+
+
+
+\begin{frame}[plain]\frametitle{Maps, Maps, and More Maps}
+\begin{itemize}
+\item Maps of imagined places: Tolkien's 1930 Middle Earth
+\end{itemize} 
+\begin{center}
+\framezoom<1><2>(2cm,2.4cm)(2.5cm,2cm) 
+\framezoom<1><3>(5cm,4.2cm)(2.5cm,2cm) 
+\pgfimage[height=7cm]{MapExamples/MapMiddleEarth}
+\end{center}
+\end{frame}
+
+\begin{frame}[plain]\frametitle{Maps, Maps, and More Maps}
+\begin{itemize}
+\item Maps of imagined places: Woelfle's 1938 map of books
+% Makulaturia: wastepaper land
+% Poesia: poetry
+% Verbotten Provanz: forbidden province
+% Lesser Republic: reader's republic
+% Recenscentia: reviewer's realm
+\end{itemize} 
+\begin{center}\includegraphics[height=7cm]{MapExamples/bucherlandes}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[plain]
+\frametitle{Maps, Maps, and More Maps}
+\begin{itemize}
+\item Maps of imagined places: online communities circa 2007 
+\end{itemize}
+\begin{center}
+\framezoom<1><2>(1.4cm,1.2cm)(5cm,4cm) 
+\framezoom<1><3>(2.55cm,3.9cm)(5cm,4cm) 
+%\framezoom<1><4>(3cm,2cm)(3cm,2cm) 
+\pgfimage[height=7cm]{MapExamples/xkcd}{\em\tiny \copyright xkcd}
+\end{center}
+\end{frame} 
+
+
+\begin{frame}[plain]\frametitle{NetFlix Contest}
+\begin{columns}
+\begin{column}{6.5cm}
+\begin{itemize}
+\item <1-> Data Set
+\begin{itemize}
+\item 20,000 movies
+\item 500,000 users
+\item 100,000,000 ratings
+\end{itemize}
+\item <2-> Challenge
+\begin{itemize}
+\item improve recommender's {\em RMSE}
+\item CineMatch: 10\% over trivial
+\item goal: do another 10\% better
+\item over 2,000 teams participated
+\end{itemize}
+\item <3-> History
+\begin{itemize}
+\item data released 10/02/06
+\item CineMax beaten on 10/08/06
+\item BellKor: 8.4\% on 10/08/07
+\item BellKor+: 9.4\% on 10/08/08
+\item BellKor++: 10.1\% on 06/26/09
+\end{itemize}
+\item <4->
+\end{itemize}
+\end{column}
+\begin{column}{5.5cm}
+
+\begin{overlayarea}{\textwidth}{5cm} 
+\vspace{-1cm}\includegraphics<1->[width=3.5cm]{MapExamples/netflix-logo}
+\hspace{.2cm}
+
+%\includegraphics<2->[width=3.2cm]{MapExamples/netflix-logo}
+\vspace{1cm}
+
+\includegraphics<3-3>[height=3cm]{MapExamples/bob}
+\includegraphics<3-3>[height=3cm]{MapExamples/yehuda}
+\includegraphics<4->[height=3cm]{MapExamples/posums}
+\end{overlayarea}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+
+\begin{frame}[plain]\frametitle{Netflix $\rightarrow$ UVerse}
+\begin{columns}
+\begin{column}{\textwidth}
+\begin{itemize}
+ \item MyVerse project
+ \begin{itemize}
+  \item UVerse TV recommenders
+  \item collaborative filtering {\em\tiny (SVD, kNN)}
+  \item content based {\em\tiny (Bayesian)} 
+ \end{itemize}
+ \item Data in 2008
+ \begin{itemize}
+  \item 755,000 set-top boxes
+  \item 37,000 unique shows
+  \item 161,000,000 monthly events
+  \item 10 hours of data per day
+ \end{itemize}
+ \item Metric data
+ \begin{itemize}
+  \item TV shows $\rightarrow$ points
+  \item similarity b/n shows $\rightarrow$ distances
+ \end{itemize}
+\end{itemize}
+\end{column}
+\begin{column}{2cm}
+\hspace{-4cm}\includegraphics[width=5cm]{MapExamples/myverse}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{Local Motivation}
+\begin{itemize}
+\item U-Verse data
+\end{itemize} \begin{center}
+\framezoom<1><2>(6.7cm,3.5cm)(1.5cm,1cm) 
+\framezoom<1><3>(.8cm,4.4cm)(2cm,1cm) 
+\pgfimage[height=5cm]{MapExamples/uverse1k}
+\end{center}
+\end{frame}
+
+\begin{frame}[plain]\frametitle{Local Motivation}
+
+\begin{itemize}
+\item Why is a show recommended?
+
+\item Explanation for recommending {\small \em Real Stories of the Highway Patrol}
+
+\includegraphics[width=8cm]{MapExamples/table}\pause
+
+\includegraphics[width=7cm]{MapExamples/correlation1} \copyright xkcd
+
+
+%\item But once again, why?
+%\item How are these shows related?
+%\item Even the experts are not always sure
+%\\ (or what's the matter with {\small \em Naked and Nasty}? )
+\end{itemize}
+\end{frame}
+
+
+
+
+
+
+
+
+
+\begin{frame}[plain]\frametitle{GMap}
+\begin{columns}
+\begin{column}{8cm}
+\begin{itemize}
+ \item<1-> Why GMap?
+ \begin{itemize}
+  \item YAGDT
+  \item Data Map
+  \item {\bf G}raph {\bf Map}
+  \item {\bf G}eo{\bf G}raphic {\bf Map}
+ \end{itemize}
+\end{itemize}
+\end{column}
+\begin{column}{4cm}
+\hspace{-4cm}\includegraphics[width=7cm]{MapExamples/TVLand}
+%[width=5cm]{MapExamples/gd_8comp}
+\end{column}
+\end{columns}
+
+\begin{columns}
+\begin{column}{\textwidth}
+\begin{itemize}
+\item <2->
+What is GMap? embedding + clustering + mapping 
+ \begin{itemize}
+  \item different algorithms: embedding, clustering, mapping
+  \item different ordering: embed $\rightarrow$ cluster, or cluster $\rightarrow$ embed
+  \item different mapping: continents, islands, borders, colors
+  \item different interpretation: font sizes, 3D terrain, colors
+ \end{itemize}
+\end{itemize}
+\end{column}
+\begin{column}{1cm}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}[plain]\frametitle{TVLand}
+\begin{center}
+\framezoom<1><2>(4.2cm,1.2cm)(2cm,1cm) %ToddlerSprawl
+\framezoom<1><3>(.7cm,4cm)(2cm,1cm) %Premium Peninsula
+\framezoom<1><4>(4.8cm,5.7cm)(2cm,1cm) %Renovation
+\framezoom<1><5>(6.3cm,5.7cm)(2cm,1cm) %Hung'ry
+\framezoom<1><6>(7.3cm,3.6cm)(2cm,1cm) %SoapLand
+\framezoom<1><7>(2.4cm,4.6cm)(2cm,1cm) %Leftbank
+\framezoom<1><8>(8.2cm,4.3cm)(2cm,1cm) %RightBank
+\framezoom<1><9>(7.9cm,1.1cm)(2cm,1cm) %HighLand
+\framezoom<1><10>(4.5cm,2.8cm)(2cm,1cm) %MidLands
+\framezoom<1><11>(5.4cm,3.7cm)(2cm,1cm) %LowLands
+\pgfimage[height=7cm]{MapExamples/TVLand}
+\end{center}
+\end{frame}
+
+\begin{frame}[plain]\frametitle{TVLand Compass}
+\begin{center}
+\includegraphics<1->[height=7cm]{MapExamples/TVLand}
+%\pgfdeclaremask{mymask}{compass.mask}
+%\pgfimage[mask=mymask,interpolate=true]{compass}
+\llap{\includegraphics<2->[height=2cm]{MapExamples/compass2}}
+% age: who else but grumpy old men watch O'Reilly and the Fox News at 5am
+% fashion and entertainment --> sports and news
+\end{center}
+\end{frame}
+
+\begin{frame}[plain]\frametitle{TVLand Compass}
+\begin{center}
+\includegraphics<1->[height=7cm]{MapExamples/uverse_rec_heat_map}
+\end{center}
+\end{frame}
+
+\begin{comment}
+
+\begin{frame}[plain]\frametitle{BookLand}
+\begin{center}
+\framezoom<1><2>(5cm,3.5cm)(2cm,1cm) %Americana
+\framezoom<1><3>(3.1cm,3.cm)(2cm,1cm) %Shakespearea
+\framezoom<1><4>(3.4cm,4.4cm)(2cm,1cm) %Victoriana
+\framezoom<1><5>(5.1cm,5.2cm)(2cm,1cm) %Thespia and Coelholand
+\framezoom<1><6>(2cm,1.9cm)(2cm,1cm) %Graecoromania
+\framezoom<1><7>(5.4cm,1.8cm)(2cm,1cm) %Russiana
+\framezoom<1><8>(5.8cm,.8cm)(2cm,1cm) %Fringistan
+%\framezoom<1><9>(3.4cm,.4cm)(2cm,1cm) %Feministan
+\pgfimage[height=6cm]{MapExamples/BookLand}
+\end{center}
+\end{frame}
+
+\end{comment}
+
+\begin{frame}[plain]\frametitle{When you have a hammer...}
+\begin{center}
+\includegraphics[height=6cm]{MapExamples/BookLand}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{When you have a hammer...}
+\begin{center}
+\includegraphics[height=7cm]{FIGURES/LastFmTop2000}
+\end{center}
+\end{frame}
+
+\begin{frame}[plain]\frametitle{When you have a hammer...}
+\begin{center}
+\includegraphics[height=7cm]{FIGURES/UniversityMap}
+\end{center}
+\end{frame}
+
+\begin{frame}[plain]\frametitle{When you have a hammer...}
+\begin{center}
+\includegraphics[height=7cm]{FIGURES/NetflixTop1000}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{Under the Hood}
+
+\begin{overlayarea}{\textwidth}{5cm} 
+\begin{center}
+\vspace{-1.3cm}
+\includegraphics<1->[width=6cm]{MapExamples/car1}
+\vspace{.7cm}
+\includegraphics<2->[width=6cm]{MapExamples/car2}
+\end{center}
+\end{overlayarea}
+\end{frame}
+
+
+
+\begin{frame}[plain]\frametitle{GMap Overview}
+
+\begin{columns}
+\begin{column}{7.3cm}
+\begin{itemize}
+\item<1-> Embedding
+\begin{itemize}
+\item PCA, MDS, LLE, IsoMap, $\dots$
+\item GMap: {\em scalable force-directed method}
+\end{itemize}
+\item<2-> Clustering
+\begin{itemize}
+\item agglomerative, $k$-means, spectral, $\dots$
+\item GMap: {\em modularity clustering}
+\end{itemize}
+\item<3-> Mapping 
+\begin{itemize}
+\item no previous work on graph$\rightarrow$ map
+\item GMap: {\em modified Voronoi Diagram}
+\end{itemize}
+\end{itemize}
+\end{column}
+\begin{column}{4cm}
+\begin{overlayarea}{\textwidth}{5cm} 
+\begin{center}
+\vspace{-1.3cm}
+\includegraphics<1->[width=3.5cm]{YIFAN/DATA/karate_graph}
+\vspace{.2cm}
+\includegraphics<2->[width=3.5cm]{YIFAN/DATA/karate_graph_cluster}
+\vspace{0cm}
+\includegraphics<3->[width=5cm]{YIFAN/DATA/karate_map2}
+
+\end{center}
+\end{overlayarea}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+
+
+
+
+
+
+
+\begin{frame}[plain]\frametitle{GMap: Embedding}
+
+\begin{itemize}
+\item Given a graph $G=(V,E)$
+\begin{itemize}
+\item places vertices as points in ${\cal R}^d$
+\item route edges in ${\cal R}^d$
+\end{itemize}
+\item Force directed methods define an energy function on layouts
+\begin{itemize}
+\item based on attractive/repulsive forces (Fruchterman-Reingold)
+\item based on graph distances (Kamada-Kawaii)
+\end{itemize}
+\item Energy model
+\begin{itemize}
+\item iterative improvement
+\item minimal energy $\Rightarrow$ good layout
+\end{itemize}
+\end{itemize}
+\vspace{.4cm}
+\begin{center}\includegraphics[width=2.1cm]{MapExamples/spring1}\includegraphics[width=2.1cm]{MapExamples/spring2}\includegraphics[width=2.1cm]{MapExamples/spring3}\includegraphics[width=2.3cm]{MapExamples/spring4}\includegraphics[width=2.1cm]{MapExamples/spring5}\end{center}
+\end{frame}
+
+
+\begin{comment}
+\begin{frame}[plain]\frametitle{GMap: Embedding, cont.}
+\vspace{.1cm}
+\begin{block}{Demo}{Force-directed algorithms in action!}\end{block}
+
+\vspace{1cm}
+
+\begin{center}\includegraphics[width=2.1cm]{MapExamples/spring1}\includegraphics[width=2.1cm]{MapExamples/spring2}\includegraphics[width=2.1cm]{MapExamples/spring3}\includegraphics[width=2.3cm]{MapExamples/spring4}\includegraphics[width=2.1cm]{MapExamples/spring5}\end{center}
+\end{frame}
+\end{comment}
+
+
+\begin{frame}[plain]\frametitle{... and now for some math...}
+
+\begin{center}
+\includegraphics[width=6cm]{MapExamples/Find_X}
+\end{center}
+\end{frame}
+
+\begin{frame}[plain]\frametitle{GMap: Embedding, cont.}
+
+\begin{itemize}
+\item Fruchterman-Reingold: balance of attraction and repulsion
+
+\begin{block}{}
+%\begin{eqnarray*}
+$$F(v)=F_r(v)+F_a(v)$$
+$$F_r(v)=\sum_{\forall u\in V}\frac{\kappa^2}{\|pos[u]-pos[v]\|^2}(pos[u]-pos[v])$$
+$$F_a(v)=\sum_{u\in Adj(v)}\frac{\|pos[u]-pos[v]\|^2}{\kappa^2}(pos[u]-pos[v])$$
+%\end{eqnarray*}
+\end{block}
+
+\item $\kappa=\sqrt{A_{frame}/|E|}$, ideal edge length
+
+\item Kamada-Kawai: match Euclidean distance to graph distance
+\end{itemize}
+\begin{block}{}$$ F(v)=\sum_{u\in V}\left( \frac{\|pos[u]-pos[v]\|^2}{(\kappa\times dist_G(u,v))^2} -1 \right)(pos[u]-pos[v])$$\end{block}
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}[plain]
+\frametitle{GMap: Clustering}
+\begin{itemize}
+\item Modularity
+\begin{itemize}
+\item measure of the quality of vertex grouping
+\item high edge density {\em within} groups
+\item 
+low edge density {\em between} groups
+\end{itemize}
+\begin{block}{}
+$$\frac{1}{2|E|} \sum_{\substack{\forall(u,v)}} \left\{ e(u,v) - \frac{deg(u)deg(v)}{2|E|} \right\} \delta(c_u, c_v)$$
+\end{block}
+\item Computing modularity
+\begin{itemize}
+\item value: $[-1, 1]$
+\item opt. modularity is NP Hard
+\item spectral heuristics are fast
+\end{itemize}
+\end{itemize}
+\vspace{-1.5cm}\hspace{5.6cm}\includegraphics[width=6cm]{YIFAN/DATA/karate_graph_cluster}
+
+\end{frame}
+
+
+\begin{frame}[plain]
+\frametitle{GMap: Mapping}
+
+\begin{columns}
+\begin{column}{7cm}
+\begin{center}\includegraphics[width=5cm]{YIFAN/DATA/karate_graph_cluster}
+\end{center}
+\begin{itemize}
+\item{} Use Voronoi Diagram for borders
+\item{} Add bounding box for a finite VD
+\end{itemize}
+\vfill
+\end{column}
+\pause
+\begin{column}{5cm}
+\begin{center}
+\includegraphics[width=4cm]{YIFAN/DATA/karate_map_bad.png}
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{GMap: Mapping, cont.}
+\begin{itemize}
+\item Problems with simple VD
+\begin{itemize}
+\item{} outer boundary is not ``form fitting''
+\item{} inner boundaries are too ``mid-western''
+\item{} not enough space for important nodes
+\end{itemize}
+\end{itemize}
+\begin{center}
+\includegraphics[width=5cm]{YIFAN/DATA/example_naive.png}
+\end{center}
+
+\end{frame}
+
+
+\begin{frame}[plain]
+\frametitle{GMap: Mapping, cont.}
+\begin{itemize}
+\item Our solution
+\begin{itemize}
+\item{} add ``box'' points around each label's bounding box
+\item{} add more ``noise'' points everywhere\\ (some distance away from real \& box points)
+\item{} generate Voronoi Diagram
+\item<2-> merge cell of the same color to form countries
+\end{itemize}
+\end{itemize}
+\begin{columns}
+\begin{column}{5cm}
+\begin{center}
+\includegraphics<1->[width=5cm]{YIFAN/DATA/example_voro.png}
+\end{center}
+\end{column}
+\begin{column}{4cm}
+\pause
+\begin{center}
+\includegraphics<2->[width=4cm]{YIFAN/DATA/example_final.png}
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{GMap: Mapping, cont.}
+\begin{columns}
+\begin{column}{6cm}
+\begin{itemize}
+\vspace{-1cm}
+\item<1->Real and dummy points
+\begin{itemize}
+\item real: real labeled data points
+\item box: proportional regions
+\item noise: form-fitting coasts
+\end{itemize}
+\vspace{1cm}
+\item<2->Merge adjacent cells 
+\begin{itemize}
+\item European-style borders
+\item Natural-looking coastlines
+\item Some fragmentation possible
+\end{itemize}
+\end{itemize}
+\end{column}
+\begin{column}{8cm}
+\begin{overlayarea}{\textwidth}{8cm}
+\vspace{-.7cm}
+\begin{center}
+\includegraphics<1->[width=7.5cm]{YIFAN/DATA/karate_map_voro.png}
+\end{center}
+\vspace{-1.cm}
+\begin{center}
+\includegraphics<2->[width=7.5cm]{YIFAN/DATA/karate_map.png}
+\end{center}
+\end{overlayarea}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{GMap: Coloring}
+\begin{itemize}
+\item{} Four Color Theorem: any map can be colored with {\bf 4} colors
+\begin{itemize}
+\item{} implicit assumption that countries are contiguous
+\end{itemize}
+\item{} Our ``countries'' may not be contiguous
+\begin{itemize}
+\item{} need as many colors as the number of clusters%, $k$
+\item careful with colors for adjacent countries
+\end{itemize}
+
+\item{} Color selection
+\begin{itemize}
+\item ``map-like'' pastel colors
+\item  5 color paletter from ColorBrewer
+
+\begin{center}
+  \vspace{-.5cm}\includegraphics[width=10cm,height=.5in]{YIFAN/DATA/coloring_bar.png}\vspace{-.5cm}
+\end{center}
+\item{} blend them to get as many colors as needed
+
+\begin{center}
+  \vspace{-.5cm}\includegraphics[width=10cm,height=.5in]{YIFAN/DATA/coloring_bar2.png}\vspace{-.5cm}
+\end{center}
+
+\item{} discrete color space; any two consecutive colors are very similar
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{ GMap: Coloring, cont.}
+\begin{itemize}
+
+\item Color assignment to countries
+\begin{itemize}
+\item create country graph $G_c=(V_c,E_c)$
+\item vertices in $V_c$ are countries
+\item edge $(i,j)\in E_c \iff$ countries $i$ and $j$ share a border
+\item vertex labeling $c:V\rightarrow \{1,2, \dots, |V|\}$ should maximize difference b/n adjacent countries
+\end{itemize}
+
+\begin{block}{}
+$\max  \min_{(i,j)\in E_c} w_{i,j} \left|c_i - c_j\right|,\quad\left\{c_1, c_2, \ldots, c_{k}\right\}\ \text{is\ a\ permutation}$
+\end{block}
+
+
+\end{itemize}
+
+\begin{center}
+\begin{table}
+ \begin{tabular}{cc}
+ \includegraphics[width=5cm]{YIFAN/DATA/coloring_random.png} &  \includegraphics[width=5cm]{YIFAN/DATA/coloring_optimal.png}\\
+ random & after optimization\\
+\end{tabular}
+\end{table}
+\end{center}
+
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{ GMap: Coloring, cont.}
+\begin{itemize}
+
+\item{} The complementary problem:
+\begin{itemize}
+\item minimum bandwidth ordering for sparse matrices
+\item NP hard
+\end{itemize}
+\begin{block}{}$$\min  \max_{(i,j)\in E}w_{i,j} \left|c_i - c_j\right|\quad \longleftrightarrow \quad \max \min _{(i,j)\in E_c}w_{i,j} \left|c_i - c_j\right|$$ \end{block}
+
+\item{} We use a combination of two heuristics:
+\begin{itemize}
+\item spectral method
+\item greedy improvement
+\end{itemize}
+
+%$$\max  \min _{(i,j)\in E}w_{i,j} \left|c_i - c_j\right|$$
+%as
+
+\begin{block}{}
+$$\max  \sum_{(i,j)\in E_c} w_{i,j} \left(c_i-c_j\right)^2$$
+{subject to} $$\sum_{k\in V}  c_k = 1$$
+\end{block}
+
+%\item{} The solution: the largest eigenvector of the weighted %Laplacian.
+
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{GMap: Coloring, random}
+\begin{center}
+\includegraphics[width=11cm]{YIFAN/DATA/uverse_1000_country_labels_70in.png}
+\end{center}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{GMap: Coloring, heuristic}
+\begin{center}
+\includegraphics[width=11cm]{YIFAN/DATA/uverse_1000_country_labels_70in_coloring.png}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}[plain]
+\frametitle{Planar Maps}
+
+\begin{itemize}
+\item contact graphs
+\item vertices are represented by geometrical objects
+\item edges correspond to two objects touching
+\end{itemize}
+
+\begin{center}
+    \includegraphics[scale=.5]{FIGURES/G1.pdf}
+    \includegraphics[scale=.5]{FIGURES/G1Maps.pdf}
+    \includegraphics[scale=.5]{FIGURES/G1Triangles.pdf}
+ \end{center}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{Planar Maps cont.}
+\begin{itemize}
+\item Vertices: polygons
+\item Edges: non-trivial borders
+\item Complexity and convexity
+\end{itemize}
+
+\begin{center}
+    \includegraphics[scale=.5]{FIGURES/G1.pdf}
+    \includegraphics[scale=.5]{FIGURES/G1Maps.pdf}
+    \includegraphics[scale=.5]{FIGURES/G1Triangles.pdf}
+ \end{center}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{Hexagonal map algorithm}
+\begin{itemize}
+\item If regions are convex, six sides are needed
+\item Six sides also suffice for every planar graph
+\item Constructive algorithm:
+\end{itemize}
+\begin{center}
+\includegraphics{FIGURES/constructionExampleA}
+\includegraphics{FIGURES/constructionExampleB}
+\includegraphics{FIGURES/constructionExampleC}
+\includegraphics{FIGURES/constructionExampleD}
+ \end{center}
+\end{frame}
+
+
+
+\begin{frame}[plain]
+\frametitle{Examples...}
+\begin{center}
+\includegraphics[scale=.3]{FIGURES/example2.pdf}
+\includegraphics[width=.4\textwidth]{FIGURES/tqg_3.pdf}
+ \end{center}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{Examples...}
+\begin{center}
+\includegraphics[scale=.3]{FIGURES/example3.pdf}
+\includegraphics[width=.4\textwidth]{FIGURES/tqg_2.pdf}
+ \end{center}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{Lower Bound}
+Consider this graph:
+\begin{center}
+\includegraphics[scale=.3]{FIGURES/example1.pdf}
+\includegraphics[width=.4\textwidth]{FIGURES/tqg_1.pdf}
+ \end{center}
+\begin{itemize}
+\item Add a vertex in each internal face and triangulate
+\item Argue 6 sides are needed...
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[plain]\frametitle{Future Work}
+\begin{columns}
+\begin{column}{8cm}
+\vspace{-1cm}
+\begin{itemize}
+\item Experiments
+\begin{itemize}
+\item what tasks are suited to maps?
+\item how much better are maps?
+\item what types of maps are better?
+\end{itemize}
+\item Interactive Map Interface
+\begin{itemize}
+\item semantic zooming
+\item control edge clutter, fragmentation
+\item map overlays: heatmap, relief
+\end{itemize}
+\item Theoretical Questions:
+\begin{itemize}
+\item touching polygonal representations
+\item characterizations
+\item recognition algorithms
+\item coloring problem
+\end{itemize}
+\end{itemize}
+\end{column}
+\begin{column}{8cm}
+\begin{overlayarea}{\textwidth}{8cm}
+\vspace{1cm}
+
+\includegraphics<2->[width=4cm]{FIGURES/spectrum}
+
+\end{overlayarea}
+\end{column}
+\end{columns}
+\hspace{1cm}\url{www.cs.arizona.edu/~kobourov/PROJECTS/maps.html}
+
+\end{frame}
+
+\begin{frame}[plain]\frametitle{Thanks!}
+\vspace{.1cm}
+\begin{block}{D. Knuth}{\em Graph drawing is the best possible field I can think of. It merges aesthetics, mathematical beauty and wonderful algorithms. It therefore provides a harmonic balance between the left and right brain parts.}\end{block}
+
+\begin{center}
+\includegraphics[width=3cm]{MapExamples/sierpinski4}
+\end{center}
+\end{frame}
+
+
+\end{document}
+
+
+\begin{comment}
+
+\begin{frame}[plain]\frametitle{Fragmentation}
+\begin{center}
+\includegraphics<1-1>[width=11cm]{YIFAN/DATA/gd_8comp2}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{Fragmentation, cont.}
+\begin{itemize}
+\item Why are some countries fragmented?
+\begin{itemize}
+\item one good reason: connectivity dictates it
+\item some not-so-good reasons:
+\begin{itemize}
+\item poor match between embedding and clustering
+\item poor dimensionality reduction
+\item label overlap removal
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\begin{center}
+\includegraphics<1-1>[width=9cm]{YIFAN/DATA/north}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[plain]\frametitle{Fragmentation, cont.}
+\begin{center}
+\includegraphics<1-1>[width=11cm]{YIFAN/DATA/gd_8comp2}
+\vspace{0.cm}
+\includegraphics<2-2>[width=11cm]{YIFAN/DATA/gd_8comp_neato2}
+\end{center}
+\end{frame}
+
+\end{comment}
+

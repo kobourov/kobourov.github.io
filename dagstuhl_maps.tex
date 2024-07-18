@@ -1,0 +1,1078 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{fullpage}
+\usepackage{url}
+\usepackage{marvosym}
+\usepackage{pifont}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{longtable}
+
+\title{{\vspace{-1.5ex}\Huge\bf Putting Data on the Map}\\{\em\Large
+    Proposal for an Interdisciplinary Dagstuhl Seminar in 2012}}
+
+\author{}
+
+\date{}
+
+
+\setlength{\parindent}{0ex}
+\setlength{\parskip}{1ex}
+
+\newcommand{\fem}{\Female}
+\newcommand{\yr}{{\ding{77}}}
+\newcommand{\ind}{\Industry}
+
+\newcommand{\comm}[1]{\textbf{[#1]}}
+% \newcommand{\comm}[1]{}
+\newcommand{\mysubsubsection}[1]{\vspace{2ex}
+
+  \noindent\textbf{#1}\vspace{.5ex}}
+\renewcommand{\paragraph}[1]{\vspace{1ex}\textbf{#1}\hspace{1ex}}
+
+%%Open questions/topics:
+%%  What is the application we are focussing on?
+%%  Full invitation list - people from GD and InfoVis and MetroMaps
+%%       including a small number of people giving overview talks?
+%%  From Dagstuhl guidelines: Importance for industry? Some sentence on
+%%  significance from organizers?
+%%  After acceptance: It would be nice to add a couple of paragraphs to the
+%%  standard invitation letter explaining more carefully what the workshop is
+%%  about.
+%%  Keyword list - graph drawing,
+%%  Topics list  - data structures / algorithms / complexity, also
+%%                 ?hardware
+%%                 ?networks
+%%                 ?society / HCI
+%%                 ?optimization / scheduling
+%%                 ?sw-engineering
+
+\renewcommand{\textfraction}{.01}
+\renewcommand{\topfraction}{.99}
+\renewcommand{\bottomfraction}{.99}
+
+\begin{document}
+
+\maketitle
+
+\section{Basic Information}
+
+\subsection{Organizers}
+
+\begin{itemize}
+\item Stephen Kobourov, University of Arizona, USA: \\
+  \emph{graph drawing, computational geometry}.
+\item Alexander Wolff, Universit\"at W{\"u}rzburg, Germany: \\
+  \emph{algorithms for geographic information, geometric networks}.
+\end{itemize}
+
+\subsection{Topics}
+
+The following topics from the Dagstuhl checklist apply:
+
+\begin{itemize}
+\item Data structures / algorithms / complexity
+\item Networks
+\item Interdisciplinary
+\end{itemize}
+
+\subsection{Keywords}
+
+\begin{minipage}{.49\textwidth}
+\begin{itemize}
+\addtolength{\itemsep}{-0.6ex}
+\item information visualization
+\item geovisualization
+\item geographic information systems
+\item cartography
+\item human-computer interaction
+\end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}{.49\textwidth}
+\begin{itemize}
+\addtolength{\itemsep}{-0.6ex}
+\item graph drawing
+\item cartographic generalization
+\item schematic maps
+\item graph theory %(boundary) labeling
+\item computational geometry
+\end{itemize}
+\end{minipage}
+
+\subsection{Proposed Dates}
+
+
+Preferred dates are in April and May 2012, except the last week of May (International Symposium on Experimental Algorithms, SEA).  Other dates in 2012 are
+also possible, except for January 1--15 (SODA, ALENEX) and second week of March(Bertinoro Workshop of Graph Drawing).
+
+AW: What about early April? (Easter Sunday is April 8, 2012)
+
+\subsection{Relation to previous Dagstuhl Seminars}
+
+There have been several Dagstuhl seminars related to graph drawing and recently, two on maps. However, our proposed seminar deals with conceptual maps as a data representation metaphor (as opposed to geographic maps). Unlike any of the related earlier seminars, this seminar will focus on the interplay between the underlying theory (graph theory, graph drawing and computational geometry), practice (cartography and GIS) and application (information visualization and human computer interaction). Below are  the most
+relevant earlier seminars:
+
+\begin{itemize}
+\item {\em Graph Algorithms and Applications}, organized by
+  T.~Nishizeki, R.~Tamassia, and D.~Wagner (seminar 9620, 13.--17.05.96)
+
+\item {\em Graph Algorithms and Applications}, organized by
+  T.~Nishizeki, R.~Tamassia, and D.~Wagner (seminar 98301, 27.--31.07.98)
+
+\item {\em Link Analysis and Visualization}, organized by U.~Brandes,
+  D.~Krackhardt, R.~Tamassia, and D.~Wagner (seminar 1271, 01.--06.07.01)
+
+\item {\em Algorithmic Aspects of Large and Complex Networks},
+  organized by M.~Adler, F.~Meyer auf der Heide, and D.~Wagner
+  (seminar 3361, 31.08.--05.09.03)
+
+\item {\em Graph Drawing}, organized by M.~J\"{u}nger, S.~Kobourov,
+  and P.~Mutzel (seminar 5191, 08.--13.05.05)
+
+\item {\em Algorithmic Aspects of Large and Complex Networks},
+  organized by F.~M.~auf der Heide and D.~Wagner (seminar 5361,
+  04.--09.09.05),
+
+\item {\em Graph Drawing with Applications to Bioinformatics and
+    Social Sciences}, organized by S.~P.~Borgatti, S.~Kobourov,
+  O.~Kohlbacher, and P.~Mutzel (seminar 8191, 04.--09.05.08)
+
+\item \emph{Dynamic Maps}, organized by C.~Brenner, W.~Burgard,
+  M.~Pauly, M.~Pollefeys, and C.~Stiller (seminar 10371,
+  12.--17.09.10),
+
+\item \emph{Schematization in Cartography, Visualization, and Computational Geometry}, organized by J.~Dykes, M.~M{\"u}ller-Hannemann, A.~Wolff (seminar 10461, 14--19.11.10),
+
+\item {\em Graph Drawing with Algorithm Engineering Methods}, to be
+  organized by C. Demetrescu, M. Kaufmann, S. Kobourov, P. Mutzel
+  (seminar 11191, 08.--13.05.11)
+\end{itemize}
+
+\subsection{Relevance for Industry}
+
+From AT\&T's vintage UNIX {\tt dot}
+package to the latest versions of popular software tools such
+Pajek, Graphviz and yEd, the graph drawing community has provided high
+quality, open source, practical tools used by a variety of users from
+computer science and mathematics researchers to genealogy
+hobbyists. Today, graph drawing tools and software packages have
+millions of users and the interest in such tools is rapidly growing
+due to the current interest in social networks and data visualziation. In
+the last year alone Pajek had 100,000 downloads, yEd over 150,000 and Graphviz over 500,000 times.
+
+Commercial graph drawing packages are also available through companies
+such as Tom Sawyer Software, ILOG (now part of IBM), and yWorks. Researchers
+and developers from both the open source and commercial sides are
+frequent contributors and participants in the annual Graph Drawing
+Symposium (which had its 17th meeting last year), the annual Bertinoro
+Workshop on Graph Drawing (which had its 5th meeting in 2010) and the
+relevant Dagstuhl Seminars.
+
+\newpage
+
+\section{Description}
+
+Visualization allows us to perceive relationships in large sets of
+interconnected data. While statistical techniques may determine
+correlations among the data, visualization helps us frame what
+questions to ask about the data. The design and implementation of
+algorithms for modeling, visualizing and interacting with large
+relational data is an active research area in data mining, information
+visualization, human-computer interaction, and graph drawing.
+
+{\em Node-and-link graphs} in which vertices are the data objects and
+edges correspond to the underlying relationships, and obtained via
+graph embedding algorithm are often used to visualize such
+relationships. Traditionally vertices are represented by points in
+two- or three-dimensional space, and edges are represented by lines
+between the corresponding vertices. The layout optimizes some
+aesthetic criteria, such as, showing underlying symmetries, or
+minimizing the number of edge crossings. The main objective is to
+display the data in a meaningful fashion, that is, in a way that shows
+well the underlying structures, and that often depends on the
+application domain.
+
+{\em Contact graphs} provide an alternative to the traditional
+visualization metaphor for planar graphs, so that vertices are
+represented by geometrical objects with edges corresponding to two
+objects touching in some specified fashion.  Typical classes of
+objects representing the vertices of the graph are line segments,
+triangles, or rectangles. An early result is Koebe's 1936 theorem,
+which shows that all planar graphs can be represented by touching
+disks. Here we focus on side-to-side
+contact graphs which resemble geographic maps, as shown in
+Figure~\ref{fig:contact}.
+
+\begin{figure}[h]
+  \centering
+  \vspace{-.2cm}
+  \includegraphics[width=3.8cm]{example4}\hspace{3cm}
+  \includegraphics[width=6cm]{tqg_4}
+  \vspace{-.2cm}
+  \caption{\small\sf A planar graph and a side-to-side contact graph
+    with each region represented by a convex polygon with at most 6
+    sides.} 
+  \label{fig:contact}
+\end{figure}
+
+{\em Map representations} provide a way to visualize relational data
+with the help of the map metaphor. A contact graph representation of a
+graph where the adjacency of vertices is expressed by regions that
+share borders is an example \comm{just an example?} of a map
+representation.  Such representations are, however, limited to planar
+graphs by definition.  We can extend the notion of a map representation
+to non-planar graphs by generalizing the idea as follows: clusters of
+well-connected vertices form countries, and countries share borders
+when neighboring clusters are interconnected; see Fig.~\ref{fig:gdmap}.
+
+\begin{figure}[h]
+  \vspace{-.3cm}
+  \hspace{-.5cm}
+  \includegraphics[width=3.3in, angle = 0]{gd_graph_8comp}
+  \includegraphics[width=3.3in, angle = 0]{gd_8comp}
+  \caption{\small\sf A collaboration graph drawn as a node-link
+    diagram and as a map.}
+  \label{fig:gdmap}
+\end{figure}
+
+Providing efficient and effective data visualization is a difficult
+challenge in many real-world software systems. One challenge lies in
+developing algorithmically efficient methods to visualize large and
+complex data sets. Another challenge is to develop effective
+visualizations that make the underlying patterns and trends easy to
+see.  These tasks are becoming increasingly more difficult due to the
+impressive growth of data to be visualized in modern applications, as
+well as their highly dynamic and data-intensive nature. 
+%\comm{Do we
+%  need this:} Developers can no longer ignore architectural aspects
+%such as the presence of complex memory hierarchies and multiple cores,
+%which are likely to shape the design of novel algorithmic techniques
+%and the way they will be implemented and engineered in the future.
+
+The ideas discussed here are also related to the notions of
+cartograms and treemaps. Cartograms redraw an existing geographic map
+so that the country areas are proportional to some metric (e.g.,
+population), an idea which dates back to a paper by Raisz in 1934 and
+is still popular today. Somewhat similar to cartograms, treemaps
+represent hierarchical information by means of space-filling tilings,
+allocating area proportional to some important metric (e.g., size of
+the subtree of the clustering hierarchy).
+
+\subsection{Topics of the Seminar}
+
+Graph representations of side-to-side touching regions tend to be
+visually appealing and have the added advantage that they suggest the
+familiar metaphor of a geographical map. Maps offer a familiar way to
+present geographical data (continents, countries, states), and
+additional properties defined with the help of contours (topography,
+geology, rainfall). Among the most commonly used types of maps are
+navigation maps and public transportation maps (subways, trains,
+buses). As a result, most people can ``read'' maps well, and often
+find them intuitive and non-intimidating. This is one of the reasons
+why we believe that maps offer a promising way for visualizing data.
+
+Relational data sets are often visualized as collection of points in
+two-dimensional space using principal component analysis,
+multidimensional scaling, force directed algorithms, or non-linear
+dimensionality reduction like LLE/Isomap. These embedding algorithms
+tend to put similar items next to each other. Visual examination often
+suffices to identify the presence of clusters. Sometimes, however, the
+clusters are not as easy to see and additional visual clues are needed
+to highlight them. One possibility is to use statistical clustering
+algorithms such as $k$-means, spectral clustering, and
+hierarchical clustering to explicitly define clusters.  The
+points and labels can then be colored based on the clustering.  While
+in small examples it is possible to convey the cluster information
+just with the use of colors and proximity, this becomes difficult to
+do with large data. Common problems include dense clusters where
+labels overlap each other and clusters that lack clearly defined
+boundaries.
+
+Maps can be used to achieve this explicit visual definition of
+clusters. There are several reasons why such a representation can be
+more useful. First, by explicitly defining the boundary of the
+clusters and coloring the regions, we make the clustering information
+clear. Second, as most dimensionality-reduction techniques lead to a
+two-dimensional positioning of the data points, a map is a natural
+generalization. Finally, while graphs, charts, and tables often
+require considerable effort to comprehend, a map representation is
+more intuitive, as most people are very familiar with maps and even
+enjoy carefully examining maps. In Figure~\ref{fig:gdmap} we have
+drawn a collaboration graph using the traditional node-and-link
+representation and using the proposed method which relies on the
+geographic-map metaphor. Note that the vertices and edges are placed
+in the exact same locations in both drawings and even the colors of
+corresponding clusters are the same. Yet, the map makes the grouping
+of tightly connected groups of vertices explicit.
+
+Practical algorithms for visualizations based on node-and-link
+representations, contact graph representations, and using the
+geographic map metaphor can make an impact on:
+\begin{enumerate}
+\item graph theory: developing and studying characterization of graphs
+  that can be represented by contact graphs;
+\item computational geometry: designing and implementing algorithms
+  for representing graphs as maps, focusing on the tradeoffs between
+  region complexity, region-boundary slopes, and convexity;
+\item information visualization: modeling and visualizing static and
+  dynamic data sets using the map metaphor, focusing on creating
+  representations which make the underlying data understandable and
+  visually appealing;
+\item human-computer interaction: studying the effectiveness of
+  standard and novel visualization metaphors can lead to the
+  development of more intuitive interfaces to large and complex data
+  sets.
+\item data mining: developing efficient and effective algorithms for
+  interactive visualization of large and complex data can be used to
+  augment existing clustering and machine-learning methods.
+\end{enumerate}
+
+Visualization tools must deal with large data sets which arise either
+directly as giant networks (e.g., telecommunications) or in the
+dynamic development of even medium-size networks, where temporal
+information is used to examine the evolution of patterns (e.g., social
+or computer networks).  The \emph{Rome graph library} and the
+\emph{Stanford graph library} were among the first benchmark sets used
+in experimental algorithms in general, and in graph drawing, in
+particular. Even though the libraries are still widely used for
+evaluating algorithms, they are outdated now because of size, degree
+restrictions etc. Therefore these benchmark sets should be
+complemented with databases of larger standard graphs and also dynamic
+and evolving graphs from real-world applications, such as ArXiV and
+DBLP collaboration and citation graphs, AT\&T telephone call graphs,
+Internet AS graph, protein interaction networks, etc.
+
+
+\subsection{Aims of the Seminar}
+
+%realization of systems /
+%Questions and issues
+%Objectives and expected results
+%ablauf
+
+The main goal of this seminar is to foster fruitful co-operations
+between researchers with interests in data visualization coming
+from the information visualization, human-computer interaction, data
+mining, and graph drawing communities. 
+
+Data visualization can help understand the underlying relationships in
+real-world data sets. It can also help discover patterns and forecast future
+trends. However, the practical value of different visualization approaches
+degrades unacceptably with larger data sets, and few if any tools can handle
+large and dynamic data sets. With this in mind, the aims of the
+Dagstuhl seminar are:
+
+\begin{enumerate}
+\item To bring together data visualization experts from the
+  information visualization, human-computer interaction, data mining,
+  and graph drawing communities.
+
+\item To discuss new methodologies and tools for developing faster
+  algorithms for large (huge) graphs, e.g., heuristics where the
+  complexity or the amount of data does not allow for the use of exact
+  algorithms.
+
+\item To formulate guidelines for the design of experiments and
+  evaluation of algorithms, and to start working on the development of
+  new benchmark sets (e.g., generic benchmark sets with certain
+  characteristics, collections of real-world data from practical
+  applications).
+
+\item To study the performance (with respect to both quality and
+  runtime) of current algorithms applied to real-world instances, and
+  to theoretically analyze it.  This may help to develop improved
+  algorithms for such instances.
+\end{enumerate}
+
+The format of the seminar will be such as to allow for presentations
+as well as problem solving sessions, with the intention of promoting
+exchange between the different participants and in encouraging the
+work on specific open problems.  The first two days will be reserved
+for overview presentations from representatives of the different
+communities and for formulation of specific open problems and
+formation of working-groups for the problems. The remaining three days
+will comprise of working-group meetings and progress reports.
+
+%\begin{itemize}
+%\item How about we prepare short surveys (10-20p) in advance?
+% \item Present seminar-relevant methods and tools.
+% \item Present seminar-relevant studies and experiments.
+% \item Present a seminar-relevant application, real world data.
+%\end{itemize}
+%}
+
+
+\subsection{Relevance of the Topics}
+
+Although many deep theoretical results came from the graph drawing
+field, the experimental and practical aspects of graph visualization
+also have a long and impressive history. From AT\&T's vintage UNIX dot
+package (which dates back to the 1980's) to the latest versions of
+Pajek, Graphviz and yEd, the graph drawing community has provided high
+quality, open source, practical tools used by a variety of users from
+computer science and mathematics researchers to genealogy
+hobbyists. Today, graph drawing tools and software packages have
+millions of users and the interest in such tools is rapidly growing
+due to the current interest in social networks and bioinformatics. In
+the last year alone Pajek had 100,000 downloads, yEd over 150,000 and
+AT\&T's Graphviz package was downloaded over 500,000 times.
+
+Commercial graph drawing packages are also available through companies
+such as Tom Sawyer Software, ILOG (now IBM), and yWorks. Researchers
+and developers from both the open source and commercial sides are
+frequent contributors and participants in the annual Graph Drawing
+Symposium (which had its 16th meeting last year), the annual Bertinoro
+Workshop on Graph Drawing (which had its 4th meeting in 2009) and the
+occasional Dagstuhl Seminars on Graph Drawing. The first Dagstuhl
+seminar on Graph Drawing (Seminar No.\ 05191) took place in 2005 with
+the aim to bring together theoreticians and practitioners from graph
+drawing and various application areas. We used this chance to
+establish fruitful contacts with graph drawing users. We also learned
+that intensive cooperation is required for building successful graph
+drawing solutions, taking into account application-specific user
+needs.
+
+The follow-up Dagstuhl seminar on Graph Drawing with Applications to
+Bioinformatics and Social Sciences (Seminar No.\ 08191) led to
+immediate multi-disciplinary collaborations. So far, five
+multi-disciplinary papers originated in work that took place during
+the seminar, some of which are already published in international
+journals or conference proceedings. Furthermore, we received very
+positive feedback from the participants. They reported on new
+long-term collaborations that originated at the seminar, and also that
+their participation helped to initiate or advance projects. Of note is
+the development of the new CLIQUE research cluster, which is a joint
+academic and industry research initiative focusing on graph and
+network analysis and visualization. The feedback confirmed that the
+acceptance of graph drawing methods in real-world applications is
+highly dependent on the availability of robust algorithms that not
+only offer good asymptotic performance in theory, but are also
+designed and experimentally evaluated to meet the practical demands,
+such as computing environment, input characteristics and permitted
+response time.
+
+\newpage
+\section{Information about the Organizers}
+\renewcommand{\refname}{\normalsize Selected Publications}
+
+\subsection*{Stephen G.~Kobourov}
+
+\begin{tabularx}{\textwidth}{@{}lXl@{~}l@{}}
+Associate Professor && 
+Email: & \href{mailto:kobourov@cs.arizona.edu}{kobourov@cs.arizona.edu} \\
+Department of Computer Science &&
+WWW: & \href{http://www.cs.arizona.edu/~kobourov}{www.cs.arizona.edu/~kobourov} \\
+University of Arizona &&
+Tel: & +1-520-626-5320 \\
+Tucson, Arizona 85721 && Fax: & +1-520-621-4324 \\
+USA \\
+\end{tabularx}
+
+\mysubsubsection{Employment} 
+
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+2006-- & Associate Professor of Computer Science at the University of Arizona\\
+
+2000--06 & Assistant Professor of Computer Science at the University of Arizona\\
+
+2008--09 & Research Scientist at AT\&T Research Labs\\
+
+2006--07 & Fulbright Scholar at the University of Botswana\\
+
+1999--00 & Visiting Instructor of Computer Science at Datmouth College
+\end{tabularx}
+
+\mysubsubsection{Education}
+
+\begin{tabular}{@{}ll@{}}
+  2000 & PhD Computer Science, Johns Hopkins University, Baltimore MD \\  
+  1997 & MS Computer Science, Johns Hopkins University, Baltimore MD \\  
+  1995 & BS Computer Science and Mathematics, Dartmouth College, Hanover NH
+\end{tabular}
+
+\mysubsubsection{Academic recognition and service}
+
+-- Fulbright Scholar, US Department of State, 2006--07 \\
+-- National Science Foundation Career Award, 2006--10\\
+-- Member of Steering Committee of Graph Drawing, 2001--04\\
+-- Editor of the Journal of Graph Algorithms and Applications\\
+-- Program Committee Chair of GD'02\\
+-- Program Committee ESA'08, SODA'06, SoftVis'06, SoftVis'10, GD'06, GD'08, GD'10, ICHCI'08\\
+-- Co-organizer of Dagstuhl seminars 5191, 8191, 11191
+
+%\noindent {\bf Short Scientific CV of Stephen Kobourov}.  Stephen Kobourov is an Associate Professor at the Department of Computer Science at University of
+%Arizona. He works on the design and implementation of algorithms for
+%information visualization, graph drawing, and human-computer interaction. He
+%has published over 80 papers in international conferences and journals since
+%receiving his PhD in 2000.  Stephen Kobourov is the Primary Investigator of a
+%CAREER National Science Foundation funded project on ``Embedding, Morphing, and
+%Visualizing Dynamic Graphs'' (NSF-CCF-0545743) with funding of \$420,000 over
+%five years. He was also the Primary Investigator of National Science Foundation
+%project on ``Visualization of Giga-Graphs and Graph Processes''
+%(NSF-ACR-0222920) with funding of \$240,000 over three years.
+
+%Stephen Kobourov was the Program Chair of the 10th International Symposium on
+%Graph Drawing 2002 in Irvine, California. He has served on the Program Committees for the 17th ACM-SIAM
+%Symposium on Discrete Algorithms (SODA), the 16th European Symposium on
+%Algorithms (ESA), the 3rd ACM Symposium on Software Visualization (SoftVis), and the 14th
+%and 16th Symposia on Graph Drawing (GD). He is an editor of the
+%Journal of Graph Algorithms and Applications. He was Graph Drawing Contest Chair
+%for the 12th and 13th International Symposia on Graph Drawing. He has organized
+%a Dagstuhl seminar on {\em Graph Drawing}, Seminar 05191, May 08--13, 2005,
+%jointly with M.~J\"unger and P.~Mutzel and a Dagstuhl Seminar on {\em Graph
+%Drawing with Applications to Bioinformatics and Social Sciences}, Seminar 08191,
+%May 04--09, jointly with S.~Borgatti, O.~Kohlbacher and P.~Mutzel.
+\vspace{-2mm}
+
+{
+\renewcommand{\refname}{\normalsize List of publications relevant to
+  the seminar\vspace{-1ex}}
+{
+\begin{thebibliography}{SK5}
+
+\bibitem[SK1]{sk1}E.~Gansner, Y.~Hu, S.~G.~Kobourov, and C.~Volinsky,
+  ``Putting Recommendations on the Map -- Visualizing Clusters and
+  Relations,'' {\em 3rd ACM Conference on Recommendation Systems},
+  p.~178--187, 2009.
+
+\bibitem[SK2]{sk2}E.~Gansner, Y.~Hu, and S.~G.~Kobourov, ``GMap:
+  Visualizing Graphs and Clusters as Maps,'' {\em 3rd IEEE Pacific
+    Visualzation Symposium (PacificVis)}, p.~310--321, 2010.
+
+%\bibitem{sk3}E.~Gansner, Y.~Hu, M.~Kaufmann, and S.~G.~Kobourov, %``Optimal Polygonal Representation of Planar Graphs,'' {\em 9th Latin %American Theoretical Informatics Symposium (LATIN)}. Accepted, to %appear in 2010.
+
+\bibitem[SK3]{sk3}C.~Collberg, S.~G.~Kobourov, J.~Nagra, J.~Pitts, and
+  K.~Wampler. A System for Graph-Based Visualization of the Evolution
+  of Software. In: \emph{ACM Symposium on Software Visualization
+    (SoftVis)}, 77--86, 2003.
+
+\bibitem[SK4]{sk4}J.~Abello, S.~G.~Kobourov, and
+  R.~Yusufov. Visualizing Large Graphs with Compound-Fisheye Views and
+  Treemaps. In: \emph{12th Symposium on Graph Drawing (GD)}, Lecture
+  Notes in Computer Science 3383, 431--442, 2004.
+
+\bibitem[SK5]{sk5}S.~G.~Kobourov and K.~Wampler. Non-Euclidean Spring
+  Embedders.  \emph{IEEE Transactions on Visualization and Computer
+    Graphics}, vol.~11, no.~6, 757--767, 2005.
+
+\end{thebibliography}}
+\vspace{3mm}
+
+\newpage
+
+\subsection*{Prof.~Dr~Alexander Wolff}
+
+\begin{tabularx}{\textwidth}{@{}lXl@{~}l@{}}
+Chair for Efficient Algorithms && 
+Email: & \href{mailto:alexander.wolff@uni-wuerzburg.de}{alexander.wolff@uni-wuerzburg.de} \\
+Dept.\ Mathematics and Computer Science &&
+WWW: & \href{http://www1.informatik.uni-wuerzburg.de/en/staff/wolff_alexander/}{www1.informatik.uni-wuerzburg.de/} \\
+University of W\"urzburg &&
+& \hfill\href{http://www1.informatik.uni-wuerzburg.de/en/staff/wolff_alexander/}{en/staff/wolff\_alexander} \\
+Am Hubland &&
+Tel: & +49 931-31-85055 \\
+97074 W\"urzburg &&
+Fax: & +49 931-888-4600 \\
+Germany \\
+\end{tabularx}
+
+\mysubsubsection{Employment} 
+
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+2009~-- & Full professor (W3) at University of W\"urzburg \\
+
+2009 & Associate professor in Algorithms at TU Eindhoven \\
+
+2006--09 & Assistant professor (tenured) in Algorithms at TU Eindhoven \\
+
+2003--06 & Junior research leader (BAT~1a) at Karls\-ruhe University:
+own project ``Geometric Networks and Their Visualization''
+financed 2003--08 by the German Science Foundation (DFG) in the
+framework of the ``Aktionsplan Informatik'' (2 PhD positions)\\
+
+2002--03 & Visiting professor~(C4) in Practical Computer Science,
+Konstanz University \\ 
+
+1999--02 & Assistant professor~(C1) in Geometry, Greifs\-wald University \\
+\end{tabularx}
+
+\mysubsubsection{Education}
+
+\begin{tabular}{@{}ll@{}}
+  2006 & Habilitation in Computer Science, Faculty of Informatics,
+  Karlsruhe University \\  
+  1999 & PhD (magna cum laude) from Freie Universit\"at Berlin \\
+  1995 & Diploma, Dept.\ Mathematics \& Computer Science, Freie
+  Universit\"at Berlin \\ 
+\end{tabular}
+
+\mysubsubsection{Academic recognition and service}
+
+-- Member of the Board of the Computer Science Subdept.\ (BCI) at TU
+Eindhoven (2008--09) \\
+-- Co-organizer of Dagstuhl seminar 06481: Geometric Networks \&
+Metric Space Embeddings \\
+-- Co-organizer of Dagstuhl seminar 10461: Schematization in
+Cartogr., Vis. \& Comp.~Geom. \\
+% Cartography, Visualization, and Computational Geometry \\
+-- Member of the program committees of ISAAC'06, GD'06, 
+AGILE'09, and AGILE'10 \\
+-- Award \emph{Best Paper of a Young Researcher} at the conference
+GISRUK'99 (Southampton) \\
+
+\vspace{-3ex}
+{
+\renewcommand{\refname}{\normalsize List of publications relevant to
+  the seminar\vspace{-1ex}}
+\begin{thebibliography}{AW4}
+\setlength{\itemsep}{0ex}
+\bibitem[AW1]{aw-w-dsms-07}
+A.~Wolff.
+\newblock Drawing subway maps: A survey.
+\newblock {\em Informatik~-- Forschung \& Entwicklung}, 22(1):23--44, 2007.
+
+\bibitem[AW2]{bksw-blmea-07}
+M.~A. Bekos, M.~Kaufmann, A.~Symvonis, and A.~Wolff.
+\newblock Boundary labeling: Models and efficient algorithms for rectangular
+  maps.
+\newblock {\em Comput. Geom. Theory Appl.}, 36(3):215--236, 2007.
+
+\bibitem[AW3]{aw-hw-osbgp-08}
+J.-H.~Haunert and A.~Wolff.
+\newblock Optimal simplification of building ground plans.
+\newblock In {\em Proc. 21st Congress Internat. Society Photogrammetry Remote
+  Sensing (ISPRS'08), Technical Commision II/3}, volume XXXVII, Part B2 of {\em
+  Internat. Archives of Photogrammetry, Remote Sensing and Spatial Informat.
+  Sci.}, pages 373--378, Beijing, 2008.
+
+\bibitem[AW4]{}
+J.-H.~Haunert and A.~Wolff.
+\newblock Area aggregation in map generalisation by mixed-integer
+programming.
+\newblock {\em Int. J. Geogr. Inform. Sci.}, to appear, 2010.
+\end{thebibliography}
+}
+
+\newpage
+\section{List of potential participants}
+
+While we
+would like all invited participants to accept the
+invitation, we anticipate that some
+will not be able to attend. If needed, we can reorganize the list into a main list and a substitute list.
+
+\smallskip
+\noindent (\yr = young researcher, \ind = industry, \fem = female)
+
+
+\subsection{Participants}
+\parindent=0pt
+
+
+\smallskip
+{\bf Alam, Muhammad (\yr),} Department of Computer Science, University of Arizona,
+Tucson, AZ 85721, USA, {\tt alam@cs.arizona.edu}
+
+\smallskip
+{\bf Auber, David,} Laboratoire Bordelais de Recherche en Informatique,
+351 cours de la lib\'eration, 33405~cedex~Talence, France, {\tt auber@labri.fr
+}
+
+\smallskip
+{\bf Badent, Melanie (\yr \fem),} University of Konstanz, Department of Computer \&
+Information Science, 78457 Konstanz, Germany, {\tt
+badent@inf.uni-konstanz.de}
+
+\smallskip
+{\bf Batagelj, Vladimir,} University of Ljubljana, Dept.\ of Mathematics,
+Jadranska 19, 1000 Ljubljana, Slovenia, {\tt Vladimir.Batagelj@uni-lj.si}
+
+\smallskip
+{\bf Binucci, Carla (\yr \fem),} University of Perugia, Via G. Duranti 93,
+06125 Perugia, Italy,\\ {\tt binucci@diei.unipg.it}
+
+%\smallskip
+%{\bf Brandenburg, Franz,} University of Passau, 94030 Passau, %Germany, \\
+%{\tt brandenb@informatik.uni-passau.de}
+
+\smallskip
+{\bf Brandes, Ulrik,} University of Konstanz, Department of Computer \&
+Information Science, 78457 Konstanz, Germany, {\tt
+Ulrik.Brandes@uni-konstanz.de}
+
+\smallskip  
+{\bf Buchheim, Christoph (\yr),} Institut f\"ur Informatik, Universit\"at zu K\"oln,
+Pohligstra\ss e 1, D-50969 K\"oln, Germany, {\tt
+buchheim@informatik.uni-koeln.de}
+
+%\smallskip
+%{\bf de Fraysseix, Hubert,} CNRS, CAMS - 54 Bd Raspail, 75006 Paris, %France,
+%{\tt hf@ehess.fr}
+
+\smallskip
+{\bf Di Battista, Giuseppe,} Universit\`a di Roma, Trevia della Vasca Navale
+79, 00146 Roma, Italy, {\tt gdb@dia.uniroma3.it}
+
+\smallskip
+{\bf Didimo, Walter,} University of Perugia, Dipartimento di Ingegneria
+Elettronica e dell'In\-for\-ma\-zione Via G. Duranti, 93 - 06125 Perugia,
+Italy, {\tt didimo@diei.unipg.it}
+
+\smallskip
+{\bf Diehl, Stephan,} Lehrstuhl f\"ur Softwaretechnik, FB IV Informatik,
+Universit\"at Trier, 54286 Trier, Germany, {\tt diehl@cs.uni-trier.de}
+
+\smallskip
+{\bf Dogrusoz, Ugur (\ind),} Bilkent University / Tom Sawyer Software, Computer
+Eng. Dept., Bilkent, 06533 Ankara, Turkey, {\tt ugur@cs.bilkent.edu.tr}
+
+\smallskip
+{\bf Duncan, Christian,} Computer Science Program, Lousiana Tech University, PO
+Box 10384, Ruston, LA 71272, USA, {\tt Christian.Duncan@acm.org}
+
+\smallskip
+{\bf Dwyer, Tim (\yr \ind),} Microsoft Research, Redmond, USA, {\tt t-tdwyer@microsoft.com}
+%The University of Sydney, Information Visualisation
+%Research Group, School of Information Technologies, Madsen Building F09,
+%Eastern Avenue, NSW 2006 Sydney, Australia, {\tt tgdwyer@yahoo.com}
+
+\smallskip
+{\bf Eades, Peter,} The University of Sydney, Basser Dept.\ of Computer
+Science, Madsen Building F09, Eastern Avenue, NSW 2006 Sydney, Australia, {\tt
+peter@cs.usyd.edu.au}
+
+\smallskip
+{\bf Effinger, Philip (\yr),} Universit\"at T\"ubingen, Sand 14, 72076 T\"ubingen,
+Germany,\\
+{\tt effinger@informatik.uni-tuebingen.de}
+
+\smallskip
+{\bf Eppstein, David,} University of California, Irvine, Dept. of Information
+\& Computer Science, 444 Computer Science Bldg., Irvine, CA 92697-3425, USA,
+{\tt XXX}
+
+\smallskip
+{\bf Erten, Cesim (\yr),} Computer Science and Engineering Department, Isik
+University, Sile Kampusu, Sile, Istanbul 34980, Turkey, {\tt
+cesim@isikun.edu.tr}
+
+\smallskip
+{\bf Felsner, Stefan}, TU Berlin, Germany, {\tt felsner@math.tu-berlin.de}
+
+\smallskip
+{\bf Frati, Fabrizio (\yr),} Universit\`a di Roma, Trevia della Vasca Navale
+79, 00146 Roma, Italy,\\ {\tt frati@dia.uniroma3.it}
+
+\smallskip
+{\bf Gaertler, Marco (\yr),} University of Karlsruhe, Faculty of Informatics,
+ITI Wagner, Box 6980, 76128 Karlsruhe, Germany {\tt gaertler@ira.uka.de}
+
+\smallskip
+{\bf Gansner, Emden (\ind),} AT\&T Research Labs, 180 Park Ave, Florham Park, NJ
+07932, USA,\\ {\tt erg@research.att.com}
+
+\smallskip
+{\bf Georg, Carsten (\yr),} Georgia Tech, XXX,
+USA,\\ {\tt
+XXX}
+
+\smallskip
+{\bf Geyer, Markus (\yr),} Universit\"at T\"ubingen, Sand 13, 72076 T\"ubingen,
+Germany,\\ {\tt
+geyer@informatik.uni-tuebingen.de}
+
+\smallskip
+{\bf Goodrich, Michael,} University of California, Irvine, Dept. of Information
+\& Computer Science, 444 Computer Science Bldg., Irvine, CA 92697-3425, USA,
+{\tt goodrich@acm.org}
+
+\smallskip
+{\bf Gutwenger, Carsten (\yr),} Technische Universit{\"a}t Dortmund,
+Department of Computer Science, Otto-Hahn-Str.\ 14, 44227 Dortmund, Germany,
+{\tt carsten.gutwenger@udo.edu}
+
+\smallskip
+{\bf Harel, David,} Faculty of Mathematics and Computer Science, The Weizmann
+Institute of Science, Rehovot, 76100, Israel, {\tt dharel@weizmann.ac.il}
+
+\smallskip
+{\bf Haunert, Jan (\yr),} Faculty of Mathematics and Computer Science,
+University of W\"urzburg, Germany, {\tt jan.haunert@uni-wuerzburg.de}
+
+\smallskip
+{\bf Hong, Seokhee (\fem),} The University of Sydney, School of Information
+Technologies, Sydney NSW 2006, Australia,
+{\tt shhong@it.usyd.edu.au}
+
+\smallskip 
+{\bf Hu, Yifan (\ind),} AT\&T Research Labs, 180 Park Ave,
+Florham Park, NJ 07932, USA \\{\tt yifanhu@research.att.com}
+
+\smallskip 
+{\bf J\"unger, Michael,} Institut f{\"u}r Informatik,
+Universit\"at zu K{\"o}ln, Pohligstra\ss e 1, D-50969 K{\"o}ln,
+Germany, {\tt mjuenger@informatik.uni-koeln.de}
+
+\smallskip 
+{\bf Kaufmann, Michael,} Universit\"at T\"ubingen, Sand 13, 72076 T\"ubingen,
+Germany,\\
+{\tt mk@informatik.uni-tuebingen.de}
+
+\smallskip
+{\bf Klein, Karsten (\yr),} Technische Universit{\"a}t Dortmund,
+Department of Computer Science,
+Otto-Hahn-Str.\ 14, 44227 Dortmund, Germany,
+{\tt karsten.klein@udo.edu}
+
+\smallskip
+{\bf Koren, Yehuda (\ind),} Yahoo Research,  Building \#30, Matam Park,
+Haifa 31905, Israel,\\ {\tt yehuda@yahoo-inc.com}
+
+\smallskip
+{\bf Kratochv\'il, Jan,} Charles University, Prague, Czech Republic,
+{\tt honza@kam.mff.cuni.cz}
+
+\smallskip
+{\bf Krug, Marcus (\yr),} University of Karlsruhe, Faculty of Informatics,
+ITI Wagner, Box 6980, 76128 Karlsruhe, Germany {\tt krug@ira.uka.de}
+
+\smallskip
+{\bf Nina Lehman (\yr \fem),} Universit{\"a}t Heidelburg, XXX
+
+\smallskip
+{\bf Liotta, Giuseppe,} University of Perugia, Dipartimento Ingegneria
+Elettronica e\\  dell'Informazione,Via G. Duranti 93, 06125 Perugia, Italy,
+{\tt liotta@diei.unipg.it}
+
+\smallskip
+{\bf Lubiw, Anna (\fem),} University of Waterloo, School of Computer Science,
+Waterloo, Ontario, N2L 3G1, Canada, {\tt alubiw@waterloo.ca}
+
+\smallskip
+{\bf Mehlhorn, Kurt,} Max-Planck-Institut f\"ur Informatik, Department 1:
+Algorithms and Complexity, Building 46.1, Room 302, Stuhlsatzenhausweg 85,
+66123 Saarbr\"ucken, Germany,\\ {\tt mehlhorn@mpi-inf.mpg.de}
+
+\smallskip
+{\bf Mrvar, Andrej,} University of Ljubljana, Faculty of Social Sciences,
+Kardeljeva pl.\ 5, 1000 Ljubljana, Slovenia, {\tt andrej.mrvar@uni-lj.si}
+
+\smallskip
+{\bf Munzner, Tamara (\fem),} Department of Computer Science, University of
+British Columbia, 2366 Main Mall, Vancouver BC V6T 1Z4, Canada, {\tt
+tmm@cs.ubc.ca}
+
+\smallskip
+{\bf N{\"o}llenburg, Martin (\yr),}, University of California, Irvine, Dept. of Information
+\& Computer Science, 444 Computer Science Bldg., Irvine, CA 92697-3425, USA,
+{\tt XXX}
+
+\smallskip
+{\bf North, Stephen (\ind),} AT\&T Research Labs, 180 Park Ave, Florham Park, NJ
+07932, USA,\\ {\tt north@research.att.com}
+
+\smallskip
+{\bf Pach, J{\'a}nos,} EPFL, Switzerland, {\tt pach@cims.nyu.edu}
+
+\smallskip
+{\bf Patrignani, Maurizio,} Universit\`a di Roma Tre, Via della Vasca
+Navale 79, 00146 Rome, Italy,\\ {\tt patrigna@dia.uniroma3.it}
+
+\smallskip
+{\bf Pich, Christian (\yr),}
+Universit{\"a}t Konstanz, Fachbereich Informatik und Informationswissenschaft
+Box 67, 78457 Konstanz, Germany,
+{\tt Christian.Pich@uni-konstanz.de}
+
+\smallskip
+{\bf Sander, Georg (\ind),} ILOG GmbH, Ober-Eschbacher Str. 109, 61352 Bad
+Homburg, Germany,\\ {\tt sander@ilog.fr}
+
+\smallskip
+{\bf Sanders, Peter,} University of Karlsruhe, Faculty of Informatics, Box
+6980, 76128 Karlsruhe, Germany, {\tt sanders@ira.uka.de}
+
+\smallskip
+{\bf van Wijk, Jack,} Dept. of Mathematics and Computer Science, TU
+Eindhoven, The Netherlands, {\tt vanwijk@win.tue.nl}
+
+\smallskip
+{\bf van Kreveld, Marc,} Dept. of Computer Science,
+Utrecht University, The Netherlands, {\tt marc@cs.uu.nl}
+
+\smallskip
+{\bf Veeramooni, Sankar (\yr),} Department of Computer Science, University of Arizona,
+Tucson, AZ 85721, USA, {\tt sankar@cs.arizona.edu}
+
+\smallskip
+{\bf Volinsky, Chris (\ind),} AT\&T Research Labs, 180 Park Ave, Florham Park, NJ
+07932, USA,\\ {\tt volinsky@research.att.com}
+
+\smallskip
+{\bf Wagner, Dorothea (\fem),} University of Karlsruhe, Faculty of Informatics,
+ILKD Wagner, Box 6980, 76128 Karlsruhe, Germany {\tt dwagner@ira.uka.de}
+
+%\smallskip
+%{\bf Wismath, Stephen,} University of Lethbridge, Dept. of %Mathematics and
+%Computer Science, 4401 University Dr., T1K-3M4 Lethbridge, Alberta, %Canada,
+%{\tt wismath@cs.uleth.ca}
+
+\smallskip
+{\bf Wybrow, Michael (\yr),} Clayton School of Information Technology, Monash
+University, Victoria 3800, T1K-3M4 Lethbridge, Alberta, Australia, {\tt
+mwybrow@csse.monash.edu.au}
+
+\section{List of Invitees (alternative format)}
+\newcounter{lfdnr}
+\setcounter{lfdnr}{0}
+\newcommand{\lfd}[1]{\addtocounter{lfdnr}{1}\arabic{lfdnr}. & #1 \\[.6mm]}
+
+\vspace*{-3ex}
+
+\begin{longtable}[l]{@{}rlllll@{}}
+\endhead
+\endfoot
+
+&&&&& i = industry \\
+&&&&& y = young \\
+&&&&& f = female \\[-4ex]
+
+\\\multicolumn{6}{@{}l}{\bf A) Cartography and GIS} \\[1ex] 
+
+%\lfd{M{\"u}ller & Matthias & ETH & Switzerland}
+%\lfd{Avelar & Silvania & & }
+\lfd{Anand & Suchith & Univ.\ of Nottingham & U.K.}
+\lfd{Bitterlich & Wolfgang & ESRI Redmond & U.S.A. & i}
+\lfd{Brenner & Claus & Univ.\ of Hannover & Germany}
+\lfd{Engelhardt & Stefan & Mentz (mdv) Stuttgart & Germany & i}
+\lfd{Fairbairn & David & Newcastle Univ.\ & U.K.}
+%\lfd{Frank & Andrew & TU Wien & Austria}
+\lfd{Haunert & Jan-Henrik & Univ.\ of W\"urzburg & Germany & y}
+\lfd{Jenny & Bernhard & ETH Z\"urich & Switzerland & y}
+\lfd{Jones & Christopher & Cardiff Univ.\ & U.K.}
+\lfd{Mackaness & William & Univ.\ of Edinburgh & U.K.}
+\lfd{Regnauld & Nicolas & Ordnance Survey & U.K. & i}
+\lfd{Rogers & Peter & Univ.\ of Kent & U.K.}
+\lfd{Ruas & Anne & COGIT, IGN & France}
+% \lfd{R\"uetschi & Urs-Jakob & Z\"urich & Switzerland & y}
+\lfd{Sack & J\"org-R\"udiger & Carleton Univ.\ & Canada}
+\lfd{Schilling & Heiko & TomTom Amsterdam & Netherlands & i}
+\lfd{Sester & Monika & Univ.\ of Hannover & Germany & f}
+\lfd{Sutton & Andrew & QuickMap & U.K. & i}
+\lfd{Twaroch & Florian & Cardiff Univ.\ & U.K. & y}
+\lfd{van Kreveld & Marc & Utrecht Univ.\ & Netherlands}
+\lfd{van Oosterom & Peter & TU Delft & Netherlands}
+\lfd{Ware & Mark & Univ.\ of Glamorgan & U.K.}
+\lfd{Weibel & Robert & Univ.\ of Zurich & Switserland}
+\lfd{Winter & Stephen & Univ.\ of Melbourne & Australia}
+\lfd{Wood & Jo & City Univ.\ London & U.K.} 
+
+\\\multicolumn{6}{@{}l}{\bf B) Cognition} \\[1ex]
+\lfd{Freksa & Christian & Univ.\ of Bremen & Germany}
+\lfd{Roberts & Maxwell & Univ.\ of Essex & U.K.}
+
+\\\multicolumn{6}{@{}l}{\bf C) Computer Graphics and Information
+  Visualization} \\[1ex] 
+
+\lfd{Agrawala & Maneesh & UC Berkeley & U.S.A.}
+\lfd{Döllner & Jürgen & Hasso-Plattner Institute & Germany}
+% \lfd{Luboschik & Martin & Univ.\ of Rostock & Germany & y}
+\lfd{van Wijk & Jack & TU Eindhoven & Netherlands}
+\lfd{Hanrahan & Pat & Standford Univ.\ & U.S.A.}
+\lfd{Igarashi & Takeo & Tokyo Univ.\ & Japan}
+\lfd{Schumann & Heidrun & Univ.\ of Rostock & Germany & f}
+\lfd{Telea & Alexandru & Univ.\ of Groningen & Netherlands} 
+\lfd{Winograd & Terry & Stanford Univ.\ & U.S.A.}
+
+\pagebreak
+\multicolumn{6}{@{}l}{\bf D) Graph Drawing} \\[1ex] 
+
+\lfd{Biedl & Therese & Univ.\ of Waterloo & Canada & f}
+% \lfd{Binucci & Carla & Perugia & Italy & f}
+% \lfd{Brandenburg & Franz & Passau & Germany}
+\lfd{Brandes & Ulrik & Univ.\ of Konstanz & Germany}
+% \lfd{Di Battista & Giuseppe & Univ.\ of Rome III & Italy}
+\lfd{Didimo & Walter & Perugia & Italy}
+\lfd{Dwyer & Tim & Microsoft & U.S.A. & i}
+\lfd{Eades & Peter & NICTA & Australia}
+\lfd{Eppstein & David & UC Irvine & U.S.A.}
+\lfd{Felsner & Stefan & TU Berlin & Germany}
+\lfd{Gansner & Emden & AT\&T & U.S.A. & i}
+\lfd{Goodrich & Michael & UC Irvine & U.S.A.}
+\lfd{Haverkort & Herman & TU Eindhoven & Netherlands}
+\lfd{Hong & Seokhee & NICTA & Australia & f}
+% \lfd{J\"unger & Michael & Cologne & Germany}
+\lfd{Kaufmann & Michael & Univ.\ of T\"ubingen & Germany}
+% \lfd{Kobourov & Stephen & AT\&T & U.S.A. & i}
+\lfd{Liotta & Giuseppe & Univ.\ of Perugia & Italy}
+\lfd{Lubiw & Anna & Univ.\ of Waterloo & Canada & f}
+\lfd{Marriott & Kim & Monash Univ.\ & Australia}
+\lfd{Mutzel & Petra & TU Dortmund & Germany & f}
+\lfd{Okamoto & Yoshio & Tokyo Tech & Japan}
+\lfd{Nishizeki & Takao & Tohoku Univ.\ & Japan}
+\lfd{N\"ollenburg & Martin & KIT & Germany & y}
+\lfd{Sander & Georg & ILOG & Germany & i}
+% \lfd{Schreiber & Falk & IPK Gatersleben & Germany}
+\lfd{Speckmann & Bettina & TU Eindhoven & Netherlands & f}
+% \lfd{Symvonis & Antonios & Athens & Greece}
+\lfd{Tamassia & Roberto & Brown Univ.\ & U.S.A.}
+\lfd{Wagner & Dorothea & Karlsruhe Univ.\ & Germany & f}
+% \lfd{Whitesides & Sue & McGill Univ.\ & Canada & f}
+\lfd{Wiese & Roland & yWorks T\"ubingen & Germany & i}
+\lfd{Wood & David & Univ.\ of Melbourne & Australia}
+
+\\\multicolumn{6}{@{}l}{\bf E) Computational Geometry, Manhattan
+  Networks, and Underground Mining} \\[1ex] 
+
+% \lfd{Bose & Prosenjit & Carleton Univ.\ & Canada}
+\lfd{Cabello & Sergio & Univ.\ of Ljubljana & Slovenia}
+\lfd{de Berg & Mark & TU Eindhoven & Netherlands}
+\lfd{Cheong & Otfried & KAIST & South Korea}
+\lfd{Chepoi & Victor & Univ.\ de la M\'editerran\'ee  & France}
+\lfd{Dumitrescu & Adrian & Univ.\ Wisconsin-Milwaukee & U.S.A.}
+% \lfd{Engels & Birgit & ZAIK (K\"oln) & Germany & f y}
+\lfd{Gudmundsson & Joachim & NICTA & Australia}
+% \lfd{Hurtado & Ferran & Barcelona & Spain} 
+\lfd{Klein & Rolf & Univ.\ of Bonn & Germany}
+\lfd{Knauer & Christian & FU Berlin & Germany}
+% \lfd{Langerman & Stefan & Universit\'e Libre & Belgium}
+% \lfd{Morin & Pat & Carleton Univ.\ & Canada}
+\lfd{Rote & G\"unter & FU Berlin & Germany}
+\lfd{Spillner & Andreas & Univ.\ of Greifswald & Germany & y}
+% \lfd{Schulze & Anna & ZAIK (K\"oln) & Germany & f y}
+\lfd{Smid & Michiel & Carleton Univ.\ & Canada}
+\lfd{Sun & He & MPI Saarbr\"ucken & Germany}
+% \lfd{Thomas & Doreen Anne & Melbourne Univ.\ & Australia & f}
+\lfd{Tokuyama & Takeshi & Tohoku Univ.\ & Japan}
+
+\pagebreak
+\multicolumn{6}{@{}l}{\bf F) VLSI-Layout and Steiner Trees} \\[1ex]
+
+\lfd{Brazil & Marcus & Univ.\ of Melbourne & Australia}
+\lfd{Chiang & Charles & Synopsys & USA & i}
+\lfd{Chiang & Ching-Shoei & Soochow Univ.\ & Taiwan}
+\lfd{Hougardy & Stefan & Univ.\ of Bonn & Germany}
+\lfd{Kahng & Andrew & UC San Diego & USA}
+%\lfd{Korte & Bernhard & Bonn & Germany}
+%\lfd{Mehlhorn & Kurt & MPI Saarbr\"ucken & Germany}
+\lfd{Tazari & Siamak & HU Berlin & Germany & y}
+\lfd{Vygen & Jens & Univ.\ of Bonn & Germany}
+\lfd{Winter & Pawel & Univ.\ of Copenhagen & Denmark}
+\lfd{Yan & Jin-Tai & Chung-Hua Univ.\ & Taiwan}
+\lfd{Zachariasen & Martin & Univ.\ of Copenhagen & Denmark}
+\lfd{Zelikovsky & Alexander & Georgia State & USA}
+\\[-1ex]
+\hline
+\\
+&&&& industry: & 10 \\
+&&&& young:    & \phantom{1}6 \\
+&&&& female:   & \phantom{1}8 \\
+\end{longtable}
+
+
+
+
+\end{document}
+
